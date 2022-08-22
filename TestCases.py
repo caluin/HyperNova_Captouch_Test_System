@@ -7,6 +7,7 @@ import subprocess
 import traceback
 import numpy
 import time
+import select
 
 
 class TestCases():
@@ -15,6 +16,23 @@ class TestCases():
         self.motor.set_params(speed1=2000, acc1=2000, dec1=2000, speed3=10, acc3=400, dec3=400)
         self.motor_off()
         self.test_fixture_shared_memory_handler = test_fixture_shared_memory_handler
+        self.project_path = os.path.dirname(os.path.abspath(__file__))
+        self.p = self.initialize_glass()
+
+    def initialize_glass(self):
+        p = subprocess.Popen(self.project_path + '\\2DTouchGesture\\TouchCoordinatesGesture.exe',
+                             stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        time.sleep(5)
+        while True:
+            # line = run_with_timeout
+            line = p.stdout.readline()
+            if "Finish test" in line.decode('utf-8'):
+                print("TestCases: Glass initialization success!")
+                return p
+            if line.decode('utf-8') == '':
+                print("TestCases: Glass initialization failed!")
+                p.stdout.flush()
+                return 0
 
     def get_motor_driver_handler(self):
         return self.motor
@@ -66,13 +84,13 @@ class TestCases():
         p.terminate()
 
     def async_dump_logcat_press_and_hold(self):
-        os.system('adb logcat -c')
-        p = subprocess.Popen("adb logcat -s mcuservice", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        p = subprocess.Popen(self.project_path + '\\2DTouchGesture\\TouchCoordinatesGesture.exe',
+                             stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         num_entries = 0
         while True:
             line = p.stdout.readline()
             try:
-                if "[trace  ] {CAPT}: module_captouch.c" in line.decode('utf-8'):
+                if "[ID,X,Y,SIZE]" in line.decode('utf-8'):
                     # read out value
                     if num_entries == Constants.NUM_OF_SAMPLES_PER_MEASUREMENT_JITTER_LINEARITY:
                         break
@@ -90,23 +108,24 @@ class TestCases():
     def async_dump_logcat_tap_swipe(self, p=None):
         num_entries = 0
         if p == None:
-            os.system('adb logcat -c')
+            # os.system('adb logcat -c')
             # execute the subprocess when function gets called the first time
-            p = subprocess.Popen("adb logcat -s mcuservice", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            p = subprocess.Popen("TouchCoordinatesGesture.exe", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             return p
         else:
             # start to process the stdout when function gets called the second time
             while True:
                 line = p.stdout.readline()
                 try:
-                    # read out value per NUM_OF_SAMPLES_PER_MEASUREMENT_GESTURE
-                    if (num_entries == Constants.NUM_OF_SAMPLES_PER_MEASUREMENT_GESTURE):
-                        num_entries = 0
-                        break
-                    print(line.decode('utf-8'))
-                    self.file.write(line.decode('utf-8'))
-                    self.file.flush()
-                    num_entries = num_entries + 1
+                    if "[ID,X,Y,SIZE]" in line.decode('utf-8'):
+                        # read out value per NUM_OF_SAMPLES_PER_MEASUREMENT_GESTURE
+                        if (num_entries == Constants.NUM_OF_SAMPLES_PER_MEASUREMENT_GESTURE):
+                            num_entries = 0
+                            break
+                        print(line.decode('utf-8'))
+                        self.file.write(line.decode('utf-8'))
+                        self.file.flush()
+                        num_entries = num_entries + 1
                 except:
                     print("TestCases: Unrecognizable character, skip to next line...")
             p.stdout.close()
@@ -276,7 +295,8 @@ class TestCases():
                 PostProcessing.post_process_noise_full_scan_x_hover('data/' + self.output_filename + '_raw.txt')
                 print('TestCases: Data processing completed.')
             except:
-                print('TestCases: Error-Test error or Test interrupted, check the arbitrary_x_hover_measurement function.')
+                print(
+                    'TestCases: Error-Test error or Test interrupted, check the arbitrary_x_hover_measurement function.')
                 print(traceback.print_exc())
             self.motor_off()
             self.test_fixture_shared_memory_handler['test_cases:interrupt'] = False
@@ -292,7 +312,7 @@ class TestCases():
             X, Y = self.setup_probe_coordinates('Linearity_Jitter_Measurement', x_min, x_max, y_reference)
             y = Y[0]
             x_list = list(X)
-            #turn on motor
+            # turn on motor
             self.motor_on()
             for x in x_list:
                 if self.test_fixture_shared_memory_handler['test_cases:interrupt'] == False:

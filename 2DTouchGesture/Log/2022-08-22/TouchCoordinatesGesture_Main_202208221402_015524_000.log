@@ -1,0 +1,5 @@
+2022-08-22 14:02:49.087 [11912] [SPECIAL] -----------------  log4z thread started!   ----------------------------
+2022-08-22 14:02:49.087 [11912] [SPECIAL] logger id=0 key=Main name=Main path=C:\Users\wenhaochen\Documents\GitHub\HyperNova_Captouch_Test_System\2DTouchGesture\Log\2022-08-22\ level=1 display=true
+2022-08-22 14:02:49.184 [8616] [SPECIAL] [CommDaemon.cpp][531] 5555 window[0] OpenDevice[0]("\\.\COM7")
+2022-08-22 14:02:49.184 [8616] [SPECIAL] [Stm32FxBoard.cpp][3496] ExePullInCallback \\.\COM7
+2022-08-22 14:03:10.474 [8008] [SPECIAL] [ProtoManager.cpp][138] CProtoManager::RcvProtoProcFunc Thread End

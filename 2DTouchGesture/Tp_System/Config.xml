@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ansi"?>
+<ViewShowType>
+	<!--0: OK show CoordView, NG show ResultView;
+       	1: All show CoordView;
+		2: All show ResultView,default set
+		3: All show detial Result View /-->
+	<Type>2</Type>
+</ViewShowType>
+<DataRecord>
+	<SaveDetail>1</SaveDetail>
+</DataRecord>
+<TestAttr>
+	<FactoryInfo patch="" station="" workid="" />
+	<QRCode delayStartTime="10" len="0" keyWord="" waitTestTimeOut="0" />
+	<FactoryPassWord />
+	<UsePythonScrpit>false</UsePythonScrpit>
+	<DevSet detect="1" />
+	<bSaveSummaryResultToTable>false</bSaveSummaryResultToTable>
+</TestAttr>
+<CommAttr>
+	<CommConfig>
+		<!--CommCfgEnable is enable switch. 1:open  0:close  default:0 -->
+		<CommCfgEnable>0</CommCfgEnable>
+		<!--PlatformDef is platform definition. 0:CPU_WIN_X64    1:CPU_WIN_X86    2:CPU_ARM64-->
+		<PlatformDef>2</PlatformDef>
+	</CommConfig>
+	<HidConfig>
+		<Item Pid="0x01E8" Vid="0x27C6" HidUsage="0x0001" HisUsagePage="0xFF00" tip="GT7868Q" />
+		<Item Pid="0x01E0" Vid="0x27C6" HidUsage="0x0001" HisUsagePage="0xFF00" tip="GT7863" />
+		<Item Pid="0xCD48" Vid="0x06CB" HidUsage="0x0001" HisUsagePage="0xFF00" tip="GT7726" />
+		<Item Pid="0x0114" Vid="0x27C6" HidUsage="0x0001" HisUsagePage="0xFFF0" tip="Phoenix" />
+		<Item Pid="0x0118" Vid="0x27C6" HidUsage="0x0001" HisUsagePage="0xFFF0" tip="BerlinB" />
+		<Item Pid="0x0120" Vid="0x27C6" HidUsage="0x0001" HisUsagePage="0xFFF0" tip="BerlinB" />
+		<Item Pid="0x0121" Vid="0x27C6" HidUsage="0x0001" HisUsagePage="0xFFF0" tip="BerlinB" />
+		<Item Pid="0x10B8" Vid="0x12D1" HidUsage="0x0001" HisUsagePage="0xFF86" tip="DP270-7986P" />
+		<Item Pid="0x0123" Vid="0x27C6" HidUsage="0x0001" HisUsagePage="0xFFF0" tip="GT7936" />
+	</HidConfig>
+	<WifiConfig>
+		<CommType>4</CommType>
+		<TcpIpConfig host="127.0.0.1" port="9006" />
+	</WifiConfig>
+</CommAttr>
+<AutoTestCfg>
+	<!-- When Order param "StopTestType" is TestNtimes,
+		the follow TestTimes is used,Default is 1. /-->
+	<TestTimes>1</TestTimes>
+</AutoTestCfg>
+<License CloseDomainBackDoor="0" />
+<LogConfig Level="0" UseConsole="0" />
+<PidMapTable>
+	<MapItem PidIc="7388" PidShow="7387P" />
+	<MapItem PidIc="1158" PidShow="1151Q" />
+	<MapItem PidIc="6862" PidShow="6861P" />
+	<MapItem PidIc="7386" PidShow="7385P" />
+	<MapItem PidIc="7389" PidShow="7389P" />
+	<MapItem PidIc="9886" PidShow="9886P" />
+	<MapItem PidIc="7384" PidShow="7387H" />
+	<MapItem PidIc="7377" PidShow="7375L" />
+	<MapItem PidIc="7376" PidShow="7375P" />
+	<MapItem PidIc="7382" PidShow="7382H" />
+	<MapItem PidIc="7869" PidShow="7868Q" />
+</PidMapTable>
+<Language>
+	<LanguagePath>Language.xml</LanguagePath>
+	<DefaultLanguage>CHN_S</DefaultLanguage>
+</Language>
+<Color>
+	<TestResult>
+		<TextColor ok="#008000" ng="#FF0000" error="#B0171F" break="#808080" notest="#20B2AA" ready="#191970" wait="#191970" />
+	</TestResult>
+</Color>
+<SkinDir>
+	<!--type 1:file,2:zip /-->
+	<GTModuleTestRes res="Skin.zip" type="2" />
+	<GTMTOrderGenRes res="Skin.zip" type="2" />
+	<GTMTSwitchGenRes res="Skin.zip" type="2" />
+</SkinDir>
+<HelpDocPath>
+	<GTModuleTestRes>
+		<ENG>doc\GTModuleTest_ENG.pdf</ENG>
+		<CHN_S>doc\GTModuleTest_CHS.pdf</CHN_S>
+	</GTModuleTestRes>
+	<GTMTSwitchGenRes>
+		<ENG>doc\GTMTSwitch_ENG.pdf</ENG>
+		<CHN_S>doc\GTMTSwitch_CHS.pdf</CHN_S>
+	</GTMTSwitchGenRes>
+</HelpDocPath>
+<ErrorCodeList>
+	<Path>ErrorCodeList.xml</Path>
+</ErrorCodeList>
+<Save7863KeyDiff>0</Save7863KeyDiff>
+<ClearEditWhenBarcodeError>1</ClearEditWhenBarcodeError>
+<CheckIcOrderFwMatch>0</CheckIcOrderFwMatch>

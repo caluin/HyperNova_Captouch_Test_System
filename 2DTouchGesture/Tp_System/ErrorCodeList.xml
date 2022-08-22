@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestItemList>
+	<Item ID="5" ENG_Name="Rawdata Test" CHN_Name="原始值测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Test Suspended" CHN_Info="测试中断" />
+			<ErrorCode ID="2" ENG_Info="Callback function call error " CHN_Info="获取原始值参数错误" />
+			<ErrorCode ID="3" ENG_Info="Unavailable" CHN_Info="下发配置错误" />
+			<ErrorCode ID="4" ENG_Info="Chip failed to switch to raw data mode" CHN_Info="芯片切换至原始值模式失败" />
+			<ErrorCode ID="5" ENG_Info="Unavailable" CHN_Info="原始值子项错误" />
+			<ErrorCode ID="6" ENG_Info="Unavailable" CHN_Info="获取数据缓冲失败" />
+			<ErrorCode ID="7" ENG_Info="Raw data acquisition timeout " CHN_Info="获取原始值超时" />
+			<ErrorCode ID="8" ENG_Info="Unavailable" CHN_Info="获取结果缓冲失败" />
+			<ErrorCode ID="9" ENG_Info="Unavailable" CHN_Info="跳频处理失败" />
+			<ErrorCode ID="10" ENG_Info="Chip switch to raw data mode failed" CHN_Info="芯片切换至坐标模式失败" />
+			<ErrorCode ID="11" ENG_Info="Failed to store the cached data" CHN_Info="保存缓存数据失败" />
+			<ErrorCode ID="12" ENG_Info="Max. raw data exceeds limit" CHN_Info="原始值最大值超限" />
+			<ErrorCode ID="13" ENG_Info="Min. raw data exceeds limit" CHN_Info="原始值最小值超限" />
+			<ErrorCode ID="14" ENG_Info="Unavailable" CHN_Info="原始值上下限超限" />
+			<ErrorCode ID="15" ENG_Info="Max. raw data on touch key exceeds limit" CHN_Info="按键最大值超限" />
+			<ErrorCode ID="16" ENG_Info="Min. raw data on touch key exceeds limit" CHN_Info="按键最小值超限" />
+			<ErrorCode ID="17" ENG_Info="Unavailable" CHN_Info="按键上下限超限" />
+			<ErrorCode ID="18" ENG_Info="Adjacent deviation exceeds limit" CHN_Info="相邻偏差超限" />
+			<ErrorCode ID="19" ENG_Info="Max. deviation on entire screen exceeds limit" CHN_Info="整屏最大偏差超限" />
+			<ErrorCode ID="20" ENG_Info="Data uniformity test failed" CHN_Info="数据一致性检测失败" />
+			<ErrorCode ID="21" ENG_Info="Jitter exceeds limit" CHN_Info="抖动值超限" />
+			<ErrorCode ID="22" ENG_Info="Raw data test failed" CHN_Info="原始值测试失败" />
+			<ErrorCode ID="23" ENG_Info="No sub test item" CHN_Info="没有勾选测试子项" />
+			<ErrorCode ID="24" ENG_Info="Continuous Adjacent deviation exceeds limit" CHN_Info="连续相邻偏差超限" />
+			<ErrorCode ID="25" ENG_Info="Raw TxRx sum diff uniform limit" CHN_Info="原始值相邻通道和差一致性超限" />
+			<ErrorCode ID="26" ENG_Info="Raw uniformity test all exceeds limit" CHN_Info="原始值一致性检测全部失败" />
+			<ErrorCode ID="27" ENG_Info="Raw TxRx offset exceeds limit" CHN_Info="原始值行差列差超限" />
+			<ErrorCode ID="28" ENG_Info="Raw TxRx adj test exceeds limit(AAT)" CHN_Info="原始值二次卡控相邻偏差AAT测试失败" />
+			<ErrorCode ID="29" ENG_Info="Raw TxRx adj test exceeds limit(NAAT)" CHN_Info="原始值二次卡控相邻偏差NAAT测试失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="6" ENG_Name="Diff Data Test" CHN_Name="差值数据测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Test Suspended" CHN_Info="测试中断" />
+			<ErrorCode ID="2" ENG_Info="Param error" CHN_Info="参数错误" />
+			<ErrorCode ID="3" ENG_Info="Chip switch to diff data mode failed" CHN_Info="进入差值模式失败" />
+			<ErrorCode ID="4" ENG_Info="Callback function call error" CHN_Info="回调函数调用错误" />
+			<ErrorCode ID="5" ENG_Info="Get diff data time out" CHN_Info="获取差值数据超时" />
+			<ErrorCode ID="6" ENG_Info="Max. diff data exceeds limit" CHN_Info="差值数据超限" />
+			<ErrorCode ID="7" ENG_Info="No sub test item" CHN_Info="没有勾选测试子项" />
+			<ErrorCode ID="8" ENG_Info="RX direction diff sum exceeds limit" CHN_Info="Rx方向差值和超限" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="7" ENG_Name="Self Rawdata Test" CHN_Name="自容原始值测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Chip switch to raw data mode failed" CHN_Info="芯片切换至原始值模式失败" />
+			<ErrorCode ID="2" ENG_Info="Max. raw data exceeds limit" CHN_Info="原始值最大值超限" />
+			<ErrorCode ID="3" ENG_Info="Min. raw data exceeds limit" CHN_Info="原始值最小值超限" />
+			<ErrorCode ID="4" ENG_Info="Param error" CHN_Info="参数错误" />
+			<ErrorCode ID="5" ENG_Info="Get raw data time out" CHN_Info="获取原始值超时" />
+			<ErrorCode ID="6" ENG_Info="Test interrupted" CHN_Info="测试被中断" />
+			<ErrorCode ID="7" ENG_Info="Self rawdata failed" CHN_Info="自容原始值测试失败" />
+			<ErrorCode ID="8" ENG_Info="No sub test item" CHN_Info="没有勾选测试子项" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="12" ENG_Name="Self diffData Test" CHN_Name="自容差值数据测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Test Suspended" CHN_Info="测试中断" />
+			<ErrorCode ID="2" ENG_Info="Param error" CHN_Info="参数错误" />
+			<ErrorCode ID="3" ENG_Info="Chip switch to self diffdata mode failed" CHN_Info="进入自容差值模式失败" />
+			<ErrorCode ID="4" ENG_Info="Callback function call error" CHN_Info="回调函数调用错误" />
+			<ErrorCode ID="5" ENG_Info="Get self diffdata time out" CHN_Info="获取自容差值数据超时" />
+			<ErrorCode ID="6" ENG_Info="Max. self diffdata exceeds limit" CHN_Info="自容差值数据超限" />
+			<ErrorCode ID="7" ENG_Info="No sub test item" CHN_Info="没有勾选测试子项" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="200" ENG_Name="Short Test" CHN_Name="短路测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Test params error" CHN_Info="测试参数错误" />
+			<ErrorCode ID="2" ENG_Info="Callback function call error " CHN_Info="下载短路固件错误" />
+			<ErrorCode ID="3" ENG_Info="Load SHORT BIN failed" CHN_Info="短路固件运行错误" />
+			<ErrorCode ID="4" ENG_Info="Send params failed" CHN_Info="发送参数错误" />
+			<ErrorCode ID="5" ENG_Info="Waiting test result time out" CHN_Info="等测试结果超时" />
+			<ErrorCode ID="6" ENG_Info="Exist short pin" CHN_Info="存在短路" />
+			<ErrorCode ID="7" ENG_Info="Test result analyze failed" CHN_Info="测试结果分析失败" />
+			<ErrorCode ID="8" ENG_Info="Unavailable" CHN_Info="写入线序失败" />
+			<ErrorCode ID="9" ENG_Info="Unavailable" CHN_Info="等待短路测试结束失败" />
+			<ErrorCode ID="10" ENG_Info="Unavailable" CHN_Info="不使能芯片失败" />
+			<ErrorCode ID="11" ENG_Info="Unavailable" CHN_Info="还原芯片失败" />
+			<ErrorCode ID="12" ENG_Info="Test break out" CHN_Info="测试中断退出" />
+			<ErrorCode ID="13" ENG_Info="TP open fail" CHN_Info="TP开路" />
+			<ErrorCode ID="14" ENG_Info="Key open fail" CHN_Info="Key开路" />
+			<ErrorCode ID="15" ENG_Info="SHORT BIN length error" CHN_Info="短路固件数据长度错误" />
+			<ErrorCode ID="16" ENG_Info="IC internal channel open abnormality" CHN_Info="IC内部通道开路异常" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="220" ENG_Name="Pen Channel Abnormal Test" CHN_Name="笔通道异常测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="Pen Channel Abnormal Test Not Support" CHN_Info="笔通道异常测试通过" />
+			<ErrorCode ID="1" ENG_Info="Pen Channel Abnormal Test Not Support" CHN_Info="笔通道异常测试不支持" />
+			<ErrorCode ID="2" ENG_Info="Pen Channel Abnormal Test START FAIL" CHN_Info="笔通道异常测试开始失败" />
+			<ErrorCode ID="3" ENG_Info="Pen Channel Abnormal Test Res One Read Fail" CHN_Info="笔通道异常测试结果读取失败" />
+			<ErrorCode ID="4" ENG_Info="Pen Channel Abnormal Test Res One Beyond Limit" CHN_Info="笔通道异常测试结果一超限" />
+			<ErrorCode ID="5" ENG_Info="Pen Channel Abnormal Test RES Two Beyond Limit" CHN_Info="笔通道异常测试结果二超限" />
+			<ErrorCode ID="6" ENG_Info="Pen Channel Abnormal Test Check Fail" CHN_Info="笔通道异常测试开始状态重置失败" />
+			</ErrorCodeList>
+	</Item>
+	<Item ID="201" ENG_Name="Rst Pin Voltage Test" CHN_Name="Rst管脚电压测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to reset" CHN_Info="复位失败" />
+			<ErrorCode ID="2" ENG_Info="AVDD test failed" CHN_Info="AVDD测试失败" />
+			<ErrorCode ID="3" ENG_Info="VDDIO test failed" CHN_Info="VDDIO测试失败" />
+			<ErrorCode ID="4" ENG_Info="RST voltage exceeds limit" CHN_Info="RST电压超限" />
+			<ErrorCode ID="5" ENG_Info="RST Contact Error" CHN_Info="RST连接错误" />
+			<ErrorCode ID="6" ENG_Info="RST Low level volt exceeds limit" CHN_Info="RST拉低电压高于阈值" />
+			<ErrorCode ID="7" ENG_Info="RST High level volt exceeds limit" CHN_Info="RST拉高电压高于阈值" />
+			<ErrorCode ID="8" ENG_Info="Get RST pin voltage failed" CHN_Info="获取RST管脚电压失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="202" ENG_Name="IIC Pin Voltage Test" CHN_Name="IIC管脚电压测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="IIC reset failed " CHN_Info="复位失败" />
+			<ErrorCode ID="2" ENG_Info="IIC-AVDD voltage test failed" CHN_Info="IIC-AVDD电压测试失败" />
+			<ErrorCode ID="3" ENG_Info="IIC-VDDIO voltage test failed" CHN_Info="IIC-VDDIO电压测试失败" />
+			<ErrorCode ID="4" ENG_Info="SCL-GND voltage exceeds limit" CHN_Info="SCL对GND电压超限" />
+			<ErrorCode ID="5" ENG_Info="SDA-GND voltage exceeds limit" CHN_Info="SDA对GND电压超限" />
+			<ErrorCode ID="6" ENG_Info="SCL-VDDIO voltage exceeds limit" CHN_Info="SCL-VDDIO电压超限" />
+			<ErrorCode ID="7" ENG_Info="SDA-VDDIO voltage exceeds limit" CHN_Info="SDA-VDDIO电压超限" />
+			<ErrorCode ID="8" ENG_Info="Get IIC pin voltage failed" CHN_Info="获取IIC管脚电压失败" />
+			<ErrorCode ID="9" ENG_Info="Both SDA and SCL pin to GND voltage exceeds limit" CHN_Info="SDA和SCL管脚对GND电压超限" />
+			<ErrorCode ID="10" ENG_Info="Both SDA and SCL pin to VDDIO voltage exceeds limit" CHN_Info="SDA和SCL管脚对VDDIO电压超限" />
+			<ErrorCode ID="11" ENG_Info="IIC hardware module error" CHN_Info="IIC硬件模块错误" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="211" ENG_Name="SPI Pin Voltage Test" CHN_Name="SPI管脚电压测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Reset failed" CHN_Info="复位失败" />
+			<ErrorCode ID="2" ENG_Info="SPI-AVDD voltage test failed" CHN_Info="SPI-AVDD电压测试失败" />
+			<ErrorCode ID="3" ENG_Info="SPI-VDDIO voltage test failed" CHN_Info="SPI-VDDIO电压测试失败" />
+			<ErrorCode ID="4" ENG_Info="SPI-MISO voltage exceeds limit" CHN_Info="SPI-MISO电压超限" />
+			<ErrorCode ID="5" ENG_Info="SPI-MISO VDDIO voltage exceeds limit" CHN_Info="SPI-MISO对VDDIO电压超限" />
+			<ErrorCode ID="6" ENG_Info="SPI-MOSI voltage exceeds limit" CHN_Info="SPI-MOSI电压超限" />
+			<ErrorCode ID="7" ENG_Info="SPI-MOSI VDDIO voltage exceeds limit" CHN_Info="SPI-MOSI对VDDIO电压超限" />
+			<ErrorCode ID="8" ENG_Info="SPI-CLK voltage exceeds limit" CHN_Info="SPI-CLK电压超限" />
+			<ErrorCode ID="9" ENG_Info="SPI-CLK VDDIO voltage exceeds limit" CHN_Info="SPI-CLK对VDDIO电压超限" />
+			<ErrorCode ID="10" ENG_Info="SPI-CS voltage exceeds limit" CHN_Info="SPI-CS电压超限" />
+			<ErrorCode ID="11" ENG_Info="SPI-CS VDDIO voltage exceeds limit" CHN_Info="SPI-CS对VDDIO电压超限" />
+			<ErrorCode ID="12" ENG_Info="Get SPI pin voltage failed" CHN_Info="获取SPI管脚电压失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="212" ENG_Name="Ext OSC Test" CHN_Name="外部晶振测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to Load Bin" CHN_Info="下载小固件失败" />
+			<ErrorCode ID="2" ENG_Info="Fail to send params" CHN_Info="下发参数失败" />
+			<ErrorCode ID="3" ENG_Info="Fail to start test" CHN_Info="开始测试失败" />
+			<ErrorCode ID="4" ENG_Info="Wait start flag time out" CHN_Info="等待开始测试状态反馈失败" />
+			<ErrorCode ID="5" ENG_Info="Fail to wait test end" CHN_Info="等待测试结束失败" />
+			<ErrorCode ID="6" ENG_Info="Fail to get test result" CHN_Info="获取结果失败" />
+			<ErrorCode ID="7" ENG_Info="Frequency unmatched" CHN_Info="频率不匹配" />
+			<ErrorCode ID="8" ENG_Info="Failed to reset IC" CHN_Info="复位失败" />
+			<ErrorCode ID="9" ENG_Info="Fw unknown status" CHN_Info="固件未知状态" />
+			<ErrorCode ID="10" ENG_Info="Ctrl output fail" CHN_Info="控制输出失败" />
+			<ErrorCode ID="11" ENG_Info="input freq test fail" CHN_Info="输入频率测试失败" />
+			<ErrorCode ID="12" ENG_Info="ext osc 2 fail" CHN_Info="ext osc 2 测试失败" />
+			<ErrorCode ID="13" ENG_Info="ext osc 3 fail" CHN_Info="ext osc 3 测试失败" />
+			<ErrorCode ID="14" ENG_Info="Crystal check fail" CHN_Info="晶振检查失败" />	
+			<ErrorCode ID="15" ENG_Info="test result checksum error" CHN_Info="测试结果校验失败" />			
+		</ErrorCodeList>
+	</Item>
+	<Item ID="203" ENG_Name="INT Pin Voltage Test" CHN_Name="INT管脚电压测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="INT reset failed" CHN_Info="INT复位失败" />
+			<ErrorCode ID="2" ENG_Info="INT-AVDD voltage test failed" CHN_Info="INT-AVDD电压测试失败" />
+			<ErrorCode ID="3" ENG_Info="INT-VDDIO voltage test failed" CHN_Info="INT-VDDIO电压测试失败" />
+			<ErrorCode ID="4" ENG_Info="INT voltage exceeds limit" CHN_Info="INT电压超限" />
+			<ErrorCode ID="5" ENG_Info="VDDIO voltage exceeds limit" CHN_Info="VDDIO电压超限" />
+			<ErrorCode ID="6" ENG_Info="Failed to set INT floating" CHN_Info="设置INT悬浮失败" />
+			<ErrorCode ID="7" ENG_Info="Input HIGH level failed" CHN_Info="输入高电平失败" />
+			<ErrorCode ID="8" ENG_Info="Input LOW level failed" CHN_Info="输入低电平失败" />
+			<ErrorCode ID="9" ENG_Info="Output HIGH level failed" CHN_Info="输出高电平失败" />
+			<ErrorCode ID="10" ENG_Info="Output LOW level failed" CHN_Info="输出低电平失败" />
+			<ErrorCode ID="11" ENG_Info="Get INT pin voltage failed" CHN_Info="获取INT管脚电压失败" />
+			<ErrorCode ID="12" ENG_Info="INT short to SPI MISO" CHN_Info="INT和SPI MISO短路" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="204" ENG_Name="OPT1 Pin Test" CHN_Name="OPT1管脚测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="OPT reset failed" CHN_Info="OPT复位失败" />
+			<ErrorCode ID="2" ENG_Info="AVDD voltage error" CHN_Info="AVDD电压错误" />
+			<ErrorCode ID="3" ENG_Info="VDDIO voltage error" CHN_Info="VDDIO电压错误" />
+			<ErrorCode ID="4" ENG_Info="Failed to pull up IO" CHN_Info="上拉io失败" />
+			<ErrorCode ID="5" ENG_Info="Failed to enable output for output high" CHN_Info="输出高时输出使能失败" />
+			<ErrorCode ID="6" ENG_Info="Failed to output high voltage" CHN_Info="输出高电平失败" />
+			<ErrorCode ID="7" ENG_Info="High voltage error" CHN_Info="高电平异常" />
+			<ErrorCode ID="8" ENG_Info="Undefined" CHN_Info="未定义" />
+			<ErrorCode ID="9" ENG_Info="Failed to pull down IO" CHN_Info="下拉io失败" />
+			<ErrorCode ID="10" ENG_Info="Failed to enable output for output low" CHN_Info="输出低时输出使能失败" />
+			<ErrorCode ID="11" ENG_Info="Failed to output low voltage" CHN_Info="输出低电平失败" />
+			<ErrorCode ID="12" ENG_Info="Low voltage error" CHN_Info="低电平异常" />
+			<ErrorCode ID="13" ENG_Info="Failed to enable input for input high" CHN_Info="输入高时输入使能失败" />
+			<ErrorCode ID="14" ENG_Info="Failed to input high voltage" CHN_Info="输入高电平失败" />
+			<ErrorCode ID="15" ENG_Info="Failed to enable input for input low" CHN_Info="输入低时输入使能失败" />
+			<ErrorCode ID="16" ENG_Info="Failed to input low voltage" CHN_Info="输入低电平失败" />
+			<ErrorCode ID="17" ENG_Info="Failed to enable input for OPT-GND test" CHN_Info="对地测试时输入使能失败" />
+			<ErrorCode ID="18" ENG_Info="OPT-GND test error" CHN_Info="对地测试失败" />
+			<ErrorCode ID="19" ENG_Info="Failed to enable input for OPT-VDDIO test" CHN_Info="对VDDIO测试时输入使能失败" />
+			<ErrorCode ID="20" ENG_Info="OPT-VDDIO test error" CHN_Info="对VDDIO测试失败" />
+			<ErrorCode ID="21" ENG_Info="Output HIGH level failed" CHN_Info="输出高电平测试失败" />
+			<ErrorCode ID="22" ENG_Info="Output LOW level failed" CHN_Info="输出低电平测试失败" />
+			<ErrorCode ID="23" ENG_Info="Parameter Error" CHN_Info="参数错误" />
+			<ErrorCode ID="24" ENG_Info="Get voltage failed" CHN_Info="获取电压失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="205" ENG_Name="OPT2 Pin Test" CHN_Name="OPT2管脚测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="OPT reset failed" CHN_Info="OPT复位失败" />
+			<ErrorCode ID="2" ENG_Info="AVDD voltage error" CHN_Info="AVDD电压错误" />
+			<ErrorCode ID="3" ENG_Info="VDDIO voltage error" CHN_Info="VDDIO电压错误" />
+			<ErrorCode ID="4" ENG_Info="Failed to pull up IO" CHN_Info="上拉io失败" />
+			<ErrorCode ID="5" ENG_Info="Failed to enable output for output high" CHN_Info="输出高时输出使能失败" />
+			<ErrorCode ID="6" ENG_Info="Failed to output high voltage" CHN_Info="输出高电平失败" />
+			<ErrorCode ID="7" ENG_Info="High voltage error" CHN_Info="高电平异常" />
+			<ErrorCode ID="8" ENG_Info="Undefined" CHN_Info="未定义" />
+			<ErrorCode ID="9" ENG_Info="Failed to pull down IO" CHN_Info="下拉io失败" />
+			<ErrorCode ID="10" ENG_Info="Failed to enable output for output low" CHN_Info="输出低时输出使能失败" />
+			<ErrorCode ID="11" ENG_Info="Failed to output low voltage" CHN_Info="输出低电平失败" />
+			<ErrorCode ID="12" ENG_Info="Low voltage error" CHN_Info="低电平异常" />
+			<ErrorCode ID="13" ENG_Info="Failed to enable input for input high" CHN_Info="输入高时输入使能失败" />
+			<ErrorCode ID="14" ENG_Info="Failed to input high voltage" CHN_Info="输入高电平失败" />
+			<ErrorCode ID="15" ENG_Info="Failed to enable input for input low" CHN_Info="输入低时输入使能失败" />
+			<ErrorCode ID="16" ENG_Info="Failed to input low voltage" CHN_Info="输入低电平失败" />
+			<ErrorCode ID="17" ENG_Info="Failed to enable input for OPT-GND test" CHN_Info="对地测试时输入使能失败" />
+			<ErrorCode ID="18" ENG_Info="OPT-GND test error" CHN_Info="对地测试失败" />
+			<ErrorCode ID="19" ENG_Info="Failed to enable input for OPT-VDDIO test" CHN_Info="对VDDIO测试时输入使能失败" />
+			<ErrorCode ID="20" ENG_Info="OPT-VDDIO test error" CHN_Info="对VDDIO测试失败" />
+			<ErrorCode ID="21" ENG_Info="Output HIGH level failed" CHN_Info="输出高电平测试失败" />
+			<ErrorCode ID="22" ENG_Info="Output LOW level failed" CHN_Info="输出低电平测试失败" />
+			<ErrorCode ID="23" ENG_Info="Parameter Error" CHN_Info="参数错误" />
+			<ErrorCode ID="24" ENG_Info="Get voltage failed" CHN_Info="获取电压失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="213" ENG_Name="OPT3 Pin Test" CHN_Name="OPT3管脚测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="OPT reset failed" CHN_Info="OPT复位失败" />
+			<ErrorCode ID="2" ENG_Info="AVDD voltage error" CHN_Info="AVDD电压错误" />
+			<ErrorCode ID="3" ENG_Info="VDDIO voltage error" CHN_Info="VDDIO电压错误" />
+			<ErrorCode ID="4" ENG_Info="Failed to pull up IO" CHN_Info="上拉io失败" />
+			<ErrorCode ID="5" ENG_Info="Failed to enable output for output high" CHN_Info="输出高时输出使能失败" />
+			<ErrorCode ID="6" ENG_Info="Failed to output high voltage" CHN_Info="输出高电平失败" />
+			<ErrorCode ID="7" ENG_Info="High voltage error" CHN_Info="高电平异常" />
+			<ErrorCode ID="8" ENG_Info="Undefined" CHN_Info="未定义" />
+			<ErrorCode ID="9" ENG_Info="Failed to pull down IO" CHN_Info="下拉io失败" />
+			<ErrorCode ID="10" ENG_Info="Failed to enable output for output low" CHN_Info="输出低时输出使能失败" />
+			<ErrorCode ID="11" ENG_Info="Failed to output low voltage" CHN_Info="输出低电平失败" />
+			<ErrorCode ID="12" ENG_Info="Low voltage error" CHN_Info="低电平异常" />
+			<ErrorCode ID="13" ENG_Info="Failed to enable input for input high" CHN_Info="输入高时输入使能失败" />
+			<ErrorCode ID="14" ENG_Info="Failed to input high voltage" CHN_Info="输入高电平失败" />
+			<ErrorCode ID="15" ENG_Info="Failed to enable input for input low" CHN_Info="输入低时输入使能失败" />
+			<ErrorCode ID="16" ENG_Info="Failed to input low voltage" CHN_Info="输入低电平失败" />
+			<ErrorCode ID="17" ENG_Info="Failed to enable input for OPT-GND test" CHN_Info="对地测试时输入使能失败" />
+			<ErrorCode ID="18" ENG_Info="OPT-GND test error" CHN_Info="对地测试失败" />
+			<ErrorCode ID="19" ENG_Info="Failed to enable input for OPT-VDDIO test" CHN_Info="对VDDIO测试时输入使能失败" />
+			<ErrorCode ID="20" ENG_Info="OPT-VDDIO test error" CHN_Info="对VDDIO测试失败" />
+			<ErrorCode ID="21" ENG_Info="Output HIGH level failed" CHN_Info="输出高电平测试失败" />
+			<ErrorCode ID="22" ENG_Info="Output LOW level failed" CHN_Info="输出低电平测试失败" />
+			<ErrorCode ID="23" ENG_Info="Parameter Error" CHN_Info="参数错误" />
+			<ErrorCode ID="24" ENG_Info="Get voltage failed" CHN_Info="获取电压失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="214" ENG_Name="OPT4 Pin Test" CHN_Name="OPT4管脚测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="OPT reset failed" CHN_Info="OPT复位失败" />
+			<ErrorCode ID="2" ENG_Info="AVDD voltage error" CHN_Info="AVDD电压错误" />
+			<ErrorCode ID="3" ENG_Info="VDDIO voltage error" CHN_Info="VDDIO电压错误" />
+			<ErrorCode ID="4" ENG_Info="Failed to pull up IO" CHN_Info="上拉io失败" />
+			<ErrorCode ID="5" ENG_Info="Failed to enable output for output high" CHN_Info="输出高时输出使能失败" />
+			<ErrorCode ID="6" ENG_Info="Failed to output high voltage" CHN_Info="输出高电平失败" />
+			<ErrorCode ID="7" ENG_Info="High voltage error" CHN_Info="高电平异常" />
+			<ErrorCode ID="8" ENG_Info="Undefined" CHN_Info="未定义" />
+			<ErrorCode ID="9" ENG_Info="Failed to pull down IO" CHN_Info="下拉io失败" />
+			<ErrorCode ID="10" ENG_Info="Failed to enable output for output low" CHN_Info="输出低时输出使能失败" />
+			<ErrorCode ID="11" ENG_Info="Failed to output low voltage" CHN_Info="输出低电平失败" />
+			<ErrorCode ID="12" ENG_Info="Low voltage error" CHN_Info="低电平异常" />
+			<ErrorCode ID="13" ENG_Info="Failed to enable input for input high" CHN_Info="输入高时输入使能失败" />
+			<ErrorCode ID="14" ENG_Info="Failed to input high voltage" CHN_Info="输入高电平失败" />
+			<ErrorCode ID="15" ENG_Info="Failed to enable input for input low" CHN_Info="输入低时输入使能失败" />
+			<ErrorCode ID="16" ENG_Info="Failed to input low voltage" CHN_Info="输入低电平失败" />
+			<ErrorCode ID="17" ENG_Info="Failed to enable input for OPT-GND test" CHN_Info="对地测试时输入使能失败" />
+			<ErrorCode ID="18" ENG_Info="OPT-GND test error" CHN_Info="对地测试失败" />
+			<ErrorCode ID="19" ENG_Info="Failed to enable input for OPT-VDDIO test" CHN_Info="对VDDIO测试时输入使能失败" />
+			<ErrorCode ID="20" ENG_Info="OPT-VDDIO test error" CHN_Info="对VDDIO测试失败" />
+			<ErrorCode ID="21" ENG_Info="Output HIGH level failed" CHN_Info="输出高电平测试失败" />
+			<ErrorCode ID="22" ENG_Info="Output LOW level failed" CHN_Info="输出低电平测试失败" />
+			<ErrorCode ID="23" ENG_Info="Parameter Error" CHN_Info="参数错误" />
+			<ErrorCode ID="24" ENG_Info="Get voltage failed" CHN_Info="获取电压失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="215" ENG_Name="OPT5 Pin Test" CHN_Name="OPT5管脚测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="OPT reset failed" CHN_Info="OPT复位失败" />
+			<ErrorCode ID="2" ENG_Info="AVDD voltage error" CHN_Info="AVDD电压错误" />
+			<ErrorCode ID="3" ENG_Info="VDDIO voltage error" CHN_Info="VDDIO电压错误" />
+			<ErrorCode ID="4" ENG_Info="Failed to pull up IO" CHN_Info="上拉io失败" />
+			<ErrorCode ID="5" ENG_Info="Failed to enable output for output high" CHN_Info="输出高时输出使能失败" />
+			<ErrorCode ID="6" ENG_Info="Failed to output high voltage" CHN_Info="输出高电平失败" />
+			<ErrorCode ID="7" ENG_Info="High voltage error" CHN_Info="高电平异常" />
+			<ErrorCode ID="8" ENG_Info="Undefined" CHN_Info="未定义" />
+			<ErrorCode ID="9" ENG_Info="Failed to pull down IO" CHN_Info="下拉io失败" />
+			<ErrorCode ID="10" ENG_Info="Failed to enable output for output low" CHN_Info="输出低时输出使能失败" />
+			<ErrorCode ID="11" ENG_Info="Failed to output low voltage" CHN_Info="输出低电平失败" />
+			<ErrorCode ID="12" ENG_Info="Low voltage error" CHN_Info="低电平异常" />
+			<ErrorCode ID="13" ENG_Info="Failed to enable input for input high" CHN_Info="输入高时输入使能失败" />
+			<ErrorCode ID="14" ENG_Info="Failed to input high voltage" CHN_Info="输入高电平失败" />
+			<ErrorCode ID="15" ENG_Info="Failed to enable input for input low" CHN_Info="输入低时输入使能失败" />
+			<ErrorCode ID="16" ENG_Info="Failed to input low voltage" CHN_Info="输入低电平失败" />
+			<ErrorCode ID="17" ENG_Info="Failed to enable input for OPT-GND test" CHN_Info="对地测试时输入使能失败" />
+			<ErrorCode ID="18" ENG_Info="OPT-GND test error" CHN_Info="对地测试失败" />
+			<ErrorCode ID="19" ENG_Info="Failed to enable input for OPT-VDDIO test" CHN_Info="对VDDIO测试时输入使能失败" />
+			<ErrorCode ID="20" ENG_Info="OPT-VDDIO test error" CHN_Info="对VDDIO测试失败" />
+			<ErrorCode ID="21" ENG_Info="Output HIGH level failed" CHN_Info="输出高电平测试失败" />
+			<ErrorCode ID="22" ENG_Info="Output LOW level failed" CHN_Info="输出低电平测试失败" />
+			<ErrorCode ID="23" ENG_Info="Parameter Error" CHN_Info="参数错误" />
+			<ErrorCode ID="24" ENG_Info="Get voltage failed" CHN_Info="获取电压失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="216" ENG_Name="OPT6 Pin Test" CHN_Name="OPT6管脚测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="OPT reset failed" CHN_Info="OPT复位失败" />
+			<ErrorCode ID="2" ENG_Info="AVDD voltage error" CHN_Info="AVDD电压错误" />
+			<ErrorCode ID="3" ENG_Info="VDDIO voltage error" CHN_Info="VDDIO电压错误" />
+			<ErrorCode ID="4" ENG_Info="Failed to pull up IO" CHN_Info="上拉io失败" />
+			<ErrorCode ID="5" ENG_Info="Failed to enable output for output high" CHN_Info="输出高时输出使能失败" />
+			<ErrorCode ID="6" ENG_Info="Failed to output high voltage" CHN_Info="输出高电平失败" />
+			<ErrorCode ID="7" ENG_Info="High voltage error" CHN_Info="高电平异常" />
+			<ErrorCode ID="8" ENG_Info="Undefined" CHN_Info="未定义" />
+			<ErrorCode ID="9" ENG_Info="Failed to pull down IO" CHN_Info="下拉io失败" />
+			<ErrorCode ID="10" ENG_Info="Failed to enable output for output low" CHN_Info="输出低时输出使能失败" />
+			<ErrorCode ID="11" ENG_Info="Failed to output low voltage" CHN_Info="输出低电平失败" />
+			<ErrorCode ID="12" ENG_Info="Low voltage error" CHN_Info="低电平异常" />
+			<ErrorCode ID="13" ENG_Info="Failed to enable input for input high" CHN_Info="输入高时输入使能失败" />
+			<ErrorCode ID="14" ENG_Info="Failed to input high voltage" CHN_Info="输入高电平失败" />
+			<ErrorCode ID="15" ENG_Info="Failed to enable input for input low" CHN_Info="输入低时输入使能失败" />
+			<ErrorCode ID="16" ENG_Info="Failed to input low voltage" CHN_Info="输入低电平失败" />
+			<ErrorCode ID="17" ENG_Info="Failed to enable input for OPT-GND test" CHN_Info="对地测试时输入使能失败" />
+			<ErrorCode ID="18" ENG_Info="OPT-GND test error" CHN_Info="对地测试失败" />
+			<ErrorCode ID="19" ENG_Info="Failed to enable input for OPT-VDDIO test" CHN_Info="对VDDIO测试时输入使能失败" />
+			<ErrorCode ID="20" ENG_Info="OPT-VDDIO test error" CHN_Info="对VDDIO测试失败" />
+			<ErrorCode ID="21" ENG_Info="Output HIGH level failed" CHN_Info="输出高电平测试失败" />
+			<ErrorCode ID="22" ENG_Info="Output LOW level failed" CHN_Info="输出低电平测试失败" />
+			<ErrorCode ID="23" ENG_Info="Parameter Error" CHN_Info="参数错误" />
+			<ErrorCode ID="24" ENG_Info="Get voltage failed" CHN_Info="获取电压失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="206" ENG_Name="Current Test" CHN_Name="电流测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to switch to raw data mode" CHN_Info="切换原始值模式失败" />
+			<ErrorCode ID="2" ENG_Info="Current exceeds limit" CHN_Info="电流超限" />
+			<ErrorCode ID="3" ENG_Info="Failed to enter coordinate mode" CHN_Info="进入坐标模式失败" />
+			<ErrorCode ID="4" ENG_Info="Vddio current exceeds limit" CHN_Info="Vddio电流超限" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="207" ENG_Name="Sleep Current Test" CHN_Name="睡眠电流测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to switch to sleep mode" CHN_Info="切换睡眠模式失败" />
+			<ErrorCode ID="2" ENG_Info="Failed to wake up" CHN_Info="唤醒失败" />
+			<ErrorCode ID="3" ENG_Info="Sleep current exceeds limit" CHN_Info="睡眠电流超限" />
+			<ErrorCode ID="4" ENG_Info="Vddio sleep current exceeds limit" CHN_Info="Vddio睡眠电流超限" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="208" ENG_Name="INT Cap Test" CHN_Name="INT Cap 测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Set INT pin floating input mode fail" CHN_Info="INT引脚设置浮空输入模式失败" />
+			<ErrorCode ID="2" ENG_Info="Hold on IC firmware fail" CHN_Info="Hold固件失败" />
+			<ErrorCode ID="3" ENG_Info="Get cap voltage data fail" CHN_Info="获取电容电压数据失败" />
+			<ErrorCode ID="4" ENG_Info="INT cap test fail" CHN_Info="INT cap测试失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="209" ENG_Name="SensorID Test" CHN_Name="SensorID测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to read SensorID" CHN_Info="读取SensorID失败" />
+			<ErrorCode ID="2" ENG_Info="SensorID test failed" CHN_Info="SensorID匹配失败" />
+			<ErrorCode ID="3" ENG_Info="Recover to Hard ID failed" CHN_Info="恢复到硬件ID失败" />
+			<ErrorCode ID="4" ENG_Info="Reset IC failed" CHN_Info="复位IC失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="218" ENG_Name="Register Value Check" CHN_Name="寄存器值检测">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Input param error" CHN_Info="输入参数错误" />
+			<ErrorCode ID="2" ENG_Info="Read register failed" CHN_Info="读取寄存器失败" />
+			<ErrorCode ID="3" ENG_Info="Register value dismatch" CHN_Info="寄存器值不匹配" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="210" ENG_Name="Gesture Test" CHN_Name="手势测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to enter gesture mode" CHN_Info="进入手势失败" />
+			<ErrorCode ID="2" ENG_Info="Failed to exit gesture mode" CHN_Info="退出手势失败" />
+			<ErrorCode ID="3" ENG_Info="Version unmatched" CHN_Info="版本比较失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="600" ENG_Name="Version Number Test" CHN_Name="版本号测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Version number unmatched" CHN_Info="版本号匹配失败" />
+			<ErrorCode ID="2" ENG_Info="Failed to upgrade firmware" CHN_Info="固件升级失败" />
+			<ErrorCode ID="3" ENG_Info="Version number unmatched after upgrade" CHN_Info="固件升级成功，版本号匹配失败" />
+			<ErrorCode ID="5" ENG_Info="Compare fimware bin failed" CHN_Info="固件数据对比失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1200" ENG_Name="Configuration Test" CHN_Name="配置测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to send configuration" CHN_Info="发送配置失败" />
+			<ErrorCode ID="2" ENG_Info="Failed to read configuration" CHN_Info="读取配置失败" />
+			<ErrorCode ID="3" ENG_Info="Failed in configuration verification" CHN_Info="配置校验失败" />
+			<ErrorCode ID="4" ENG_Info="Failed to switch to coordinate mode" CHN_Info="切换至坐标模式失败" />
+			<ErrorCode ID="5" ENG_Info="Failed to get fw ic info data" CHN_Info="获取固件IcInfo数据失败" />
+			<ErrorCode ID="6" ENG_Info="Config version mismatch" CHN_Info="配置版本号比较失败" />
+			<ErrorCode ID="7" ENG_Info="Load Isp fail" CHN_Info="烧录Isp失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1201" ENG_Name="Flash Test" CHN_Name="Flash测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to write data to Flash" CHN_Info="写入flash失败" />
+			<ErrorCode ID="2" ENG_Info="Failed to read data from Flash" CHN_Info="读取flash失败" />
+			<ErrorCode ID="3" ENG_Info="Failed to reset IC" CHN_Info="ic复位失败" />
+			<ErrorCode ID="4" ENG_Info="Verification failed after reset" CHN_Info="复位后校验失败" />
+			<ErrorCode ID="5" ENG_Info="Load Isp fail" CHN_Info="烧录Isp失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1202" ENG_Name="Send Specified Configuration" CHN_Name="发送特殊配置">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to send configuration" CHN_Info="发送配置失败" />
+			<ErrorCode ID="2" ENG_Info="Failed to send configuration" CHN_Info="读取配置失败" />
+			<ErrorCode ID="3" ENG_Info="Failed in configuration verification" CHN_Info="配置校验失败" />
+			<ErrorCode ID="4" ENG_Info="Do not send configuration for the fail of other test item" CHN_Info="有其他测试项测试NG，未下发配置" />
+			<ErrorCode ID="5" ENG_Info="Config version mismatch" CHN_Info="配置版本号比较失败" />
+			<ErrorCode ID="6" ENG_Info="Load Isp fail" CHN_Info="烧录Isp失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1203" ENG_Name="Send Specified Firmware" CHN_Name="发送指定固件">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to upgrade firmware" CHN_Info="升级固件失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1204" ENG_Name="User Information" CHN_Name="用户信息">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to write user information" CHN_Info="用户信息写入失败" />
+			<ErrorCode ID="2" ENG_Info="Failed to read user information" CHN_Info="用户信息读取失败" />
+			<ErrorCode ID="3" ENG_Info="User information unmatched" CHN_Info="用户信息对比失败" />
+			<ErrorCode ID="4" ENG_Info="Failed to reset IC" CHN_Info="IC复位失败" />
+			<ErrorCode ID="5" ENG_Info="No Data" CHN_Info="数据缺失" />
+			<ErrorCode ID="6" ENG_Info="User info in RAM error" CHN_Info="RAM区客户信息比对失败" />
+			<ErrorCode ID="7" ENG_Info="User info backup fail" CHN_Info="用户信息备份失败" />
+			<ErrorCode ID="8" ENG_Info="No user info in ic flash" CHN_Info="芯片flash中无客户信息" />
+			<ErrorCode ID="9" ENG_Info="Load ISP fail" CHN_Info="烧录ISP失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1205" ENG_Name="Check Chip Test Result" CHN_Name="检查芯片测试结果">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to read test result" CHN_Info="读取测试结果失败" />
+			<ErrorCode ID="2" ENG_Info="Verification failed" CHN_Info="FT结果校验失败" />
+			<ErrorCode ID="3" ENG_Info="Unavailable" CHN_Info="未实现" />
+			<ErrorCode ID="4" ENG_Info="IC unqualified" CHN_Info="FT测试结果为NG" />
+			<ErrorCode ID="5" ENG_Info="This test item is not supported" CHN_Info="当前IC不支持该测试项" />
+			<ErrorCode ID="6" ENG_Info="Load Isp fail" CHN_Info="烧录Isp失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1206" ENG_Name="Check Module Test Result" CHN_Name="检查模组测试结果">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to read test result" CHN_Info="获取测试结果失败" />
+			<ErrorCode ID="2" ENG_Info="Failed last time" CHN_Info="上次测试结果为NG" />
+			<ErrorCode ID="3" ENG_Info="Verification failed" CHN_Info="校验失败" />
+			<ErrorCode ID="4" ENG_Info="Order CRC Check fail" CHN_Info="上一站的工单CRC校验失败" />
+			<ErrorCode ID="5" ENG_Info="Load Isp fail" CHN_Info="烧录Isp失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1207" ENG_Name="Restore Configuration" CHN_Name="恢复配置">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to write configuration" CHN_Info="配置写入失败" />
+			<ErrorCode ID="2" ENG_Info="Failed to read configuration" CHN_Info="配置读取失败" />
+			<ErrorCode ID="3" ENG_Info="Failed in configuration verification" CHN_Info="配置校验失败" />
+			<ErrorCode ID="4" ENG_Info="Config version mismatch" CHN_Info="配置版本号比较失败" />
+			<ErrorCode ID="5" ENG_Info="Load Isp fail" CHN_Info="烧录Isp失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1208" ENG_Name="Test Result Storage" CHN_Name="存储测试结果">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to obtain test result" CHN_Info="获取测试结果失败" />
+			<ErrorCode ID="2" ENG_Info="Failed to write test result" CHN_Info="写入结果失败" />
+			<ErrorCode ID="3" ENG_Info="Failed to reset IC" CHN_Info="IC复位失败" />
+			<ErrorCode ID="4" ENG_Info="Failed to write project id" CHN_Info="写入project id失败" />
+			<ErrorCode ID="5" ENG_Info="Load Isp fail" CHN_Info="烧录Isp失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1209" ENG_Name="UID Test" CHN_Name="UID测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Failed to read UID" CHN_Info="读取UID失败" />
+			<ErrorCode ID="2" ENG_Info="Failed to write UID" CHN_Info="写UID失败" />
+			<ErrorCode ID="3" ENG_Info="Load Isp fail" CHN_Info="烧录Isp失败" />
+			<ErrorCode ID="4" ENG_Info="UID data abnormal" CHN_Info="UID数据异常" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="801" ENG_Name="Finger Line Test" CHN_Name="手划线测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Test CALLBACK fun didn’t run" CHN_Info="测试回调未运行" />
+			<ErrorCode ID="2" ENG_Info="Test CALLBACK fun running abnormal" CHN_Info="测试回调运行异常" />
+			<ErrorCode ID="3" ENG_Info="Four corner test failed" CHN_Info="四角测试失败" />
+			<ErrorCode ID="4" ENG_Info="Liner test failed" CHN_Info="线性测试失败" />
+			<ErrorCode ID="5" ENG_Info="Four boundary test failed" CHN_Info="四边测试失败" />
+			<ErrorCode ID="6" ENG_Info="Bubble grid detection test failed" CHN_Info="气泡网格检测测试失败" />
+			<ErrorCode ID="7" ENG_Info="Meta dish area draw line failed" CHN_Info="Meta dish区域画线测试失败" />
+			<ErrorCode ID="8" ENG_Info="Meta flat area draw line failed" CHN_Info="Meta flat区域画线测试失败" />
+			<ErrorCode ID="129" ENG_Info="Don’t test" CHN_Info="子项未测试" />
+			<ErrorCode ID="130" ENG_Info="Test Suspended" CHN_Info="子项测试中断" />
+			<ErrorCode ID="131" ENG_Info="Test timeout" CHN_Info="子项测试超时" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="802" ENG_Name="Pen Line Test" CHN_Name="笔划线测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Test CALLBACK fun didn’t run" CHN_Info="测试回调未运行" />
+			<ErrorCode ID="2" ENG_Info="Test CALLBACK fun running abnormal" CHN_Info="测试回调运行异常" />
+			<ErrorCode ID="3" ENG_Info="Four corner test failed" CHN_Info="四角测试失败" />
+			<ErrorCode ID="4" ENG_Info="Liner test failed" CHN_Info="线性测试失败" />
+			<ErrorCode ID="5" ENG_Info="Four boundary test failed" CHN_Info="四边测试失败" />
+			<ErrorCode ID="129" ENG_Info="Don’t test" CHN_Info="子项未测试" />
+			<ErrorCode ID="130" ENG_Info="Test Suspended" CHN_Info="子项测试中断" />
+			<ErrorCode ID="131" ENG_Info="Test timeout" CHN_Info="子项测试超时" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="803" ENG_Name="Touch Pad Test" CHN_Name="Touch Pad测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Four corner test failed" CHN_Info="测试失败" />
+			<ErrorCode ID="2" ENG_Info="Test CALLBACK fun didn’t run" CHN_Info="测试回调未运行" />
+			<ErrorCode ID="3" ENG_Info="Test CALLBACK fun running abnormal" CHN_Info="测试中途退出" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="804" ENG_Name="Multi Key Test" CHN_Name="虚拟多按键测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Four corner test failed" CHN_Info="测试失败" />
+			<ErrorCode ID="2" ENG_Info="Test CALLBACK fun didn’t run" CHN_Info="测试回调未运行" />
+			<ErrorCode ID="3" ENG_Info="Test CALLBACK fun running abnormal" CHN_Info="测试中途退出" />
+			<ErrorCode ID="4" ENG_Info="Left key test failed" CHN_Info="左键测试失败" />
+			<ErrorCode ID="5" ENG_Info="Right key test failed" CHN_Info="右键测试失败" />
+			<ErrorCode ID="6" ENG_Info="Left and Right key test failed" CHN_Info="左右键测试失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="805" ENG_Name="Slider Touch Test" CHN_Name="滑条触摸测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Test parameter error" CHN_Info="测试参数错误" />
+			<ErrorCode ID="2" ENG_Info="Test timeout fail" CHN_Info="测试超时失败" />
+			<ErrorCode ID="3" ENG_Info="Test break out fail" CHN_Info="测试中途退出" />
+			<ErrorCode ID="4" ENG_Info="Slider Touch test failed" CHN_Info="测试失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="800" ENG_Name="Key Touch Test" CHN_Name="按键触摸测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Test CALLBACK fun didn’t run" CHN_Info="测试回调未运行" />
+			<ErrorCode ID="2" ENG_Info="Test Time Out" CHN_Info="测试超时" />
+			<ErrorCode ID="3" ENG_Info="Test Parameter Error" CHN_Info="测试参数错误" />
+			<ErrorCode ID="4" ENG_Info="Test Break" CHN_Info="测试中途退出" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="217" ENG_Name="I2C Device Test" CHN_Name="I2C设备测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="I2C_ADDR_SEL Set Err" CHN_Info="I2C_ADDR_SEL设置错误" />
+			<ErrorCode ID="2" ENG_Info="I2C Device Addr Err" CHN_Info="I2C设备地址错误" />
+			<ErrorCode ID="3" ENG_Info="I2C_SET_OPT Set Err" CHN_Info="I2C_SET_OPT设置错误" />
+			<ErrorCode ID="4" ENG_Info="I2C Communicate Err" CHN_Info="I2C通讯失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="601" ENG_Name="FW Run State Check" CHN_Name="固件运行状态检测">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Module Comunicate Err" CHN_Info="模组通信失败" />
+			<ErrorCode ID="2" ENG_Info="GM11 Normal & G1 Err" CHN_Info="GM11正常G1异常" />
+			<ErrorCode ID="3" ENG_Info="Chip PID Err" CHN_Info="芯片PID不正确" />
+			<ErrorCode ID="4" ENG_Info="G1 SPI Data Err" CHN_Info="G1传输SPI数据异常" />
+			<ErrorCode ID="5" ENG_Info="Fw Unkonwn Err" CHN_Info="固件运行状态未知错误" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="602" ENG_Name="9886 Reg Check" CHN_Name="9886寄存器检测">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="NG" CHN_Info="测试不通过" />
+			<ErrorCode ID="2" ENG_Info="Input Param error" CHN_Info="输入参数错误" />
+			<ErrorCode ID="3" ENG_Info="Send Reg Check Bin Failed" CHN_Info="下发检测固件失败" />
+			<ErrorCode ID="4" ENG_Info="Call Before Test Failed" CHN_Info="测试前回调失败" />
+			<ErrorCode ID="5" ENG_Info="Reg value error" CHN_Info="寄存器值错误" />
+			<ErrorCode ID="6" ENG_Info="The firmware is running abnormally " CHN_Info="固件运行异常" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1210" ENG_Name="LCD noise Detect" CHN_Name="LCD噪声检测">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Noise test NG" CHN_Info="噪声测试不通过" />
+			<ErrorCode ID="2" ENG_Info="Input Param error" CHN_Info="输入参数错误" />
+			<ErrorCode ID="3" ENG_Info="Fw version mismatch" CHN_Info="固件版本号错误" />
+			<ErrorCode ID="4" ENG_Info="Freq param wrong" CHN_Info="频点参数错误" />
+			<ErrorCode ID="5" ENG_Info="Set reg state failed" CHN_Info="设置寄存器状态失败" />
+			<ErrorCode ID="6" ENG_Info="Get reg state failed" CHN_Info="获取寄存器状态失败" />
+			<ErrorCode ID="7" ENG_Info="Reg state error" CHN_Info="寄存器状态错误" />
+			<ErrorCode ID="8" ENG_Info="Send detect bin file failed" CHN_Info="下发测试用固件失败" />
+			<ErrorCode ID="9" ENG_Info="Enter detect mode failed" CHN_Info="进入检测模式失败" />
+			<ErrorCode ID="10" ENG_Info="Set freq failed" CHN_Info="设置频点失败" />
+			<ErrorCode ID="11" ENG_Info="Get detect value failed" CHN_Info="获取噪声检测值失败" />
+			<ErrorCode ID="12" ENG_Info="Set command failed" CHN_Info="下发命令失败" />
+			<ErrorCode ID="13" ENG_Info="Call back before test failed" CHN_Info="测试前回调失败" />
+			<ErrorCode ID="14" ENG_Info="Send detect time failed" CHN_Info="下发检测时长失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1211" ENG_Name="FPC Test" CHN_Name="FPC测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="NG" CHN_Info="测试不通过" />
+			<ErrorCode ID="2" ENG_Info="Press Cancel" CHN_Info="取消按压" />
+			<ErrorCode ID="3" ENG_Info="Press timeout" CHN_Info="按压超时" />
+			<ErrorCode ID="4" ENG_Info="Enter rawdata mode fail" CHN_Info="进入原始值模式失败" />
+			<ErrorCode ID="5" ENG_Info="Get rawdata fail" CHN_Info="获取原始值失败" />
+			<ErrorCode ID="6" ENG_Info="Read FPC press status file fail" CHN_Info="读取FPC按压状态文件失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1212" ENG_Name="Check Chip Key Info" CHN_Name="检查芯片关键信息">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Communicate Fail" CHN_Info="通信失败" />
+			<ErrorCode ID="2" ENG_Info="Check Sum Error" CHN_Info="数据校验错误" />
+			<ErrorCode ID="3" ENG_Info="IC PID Dismatch" CHN_Info="IC PID 不匹配" />
+			<ErrorCode ID="4" ENG_Info="This test item is not supported" CHN_Info="不支持该测试项" />
+			<ErrorCode ID="5" ENG_Info="Not supported Get Chip Program Info" CHN_Info="不支持获取芯片烧录信息" />
+			<ErrorCode ID="6" ENG_Info="Chip Program Info Read Fail" CHN_Info="芯片烧录信息读失败" />
+			<ErrorCode ID="7" ENG_Info="No FT Test Result Info" CHN_Info="没有FT测试结果信息" />
+			<ErrorCode ID="8" ENG_Info="FT Test NG Sample" CHN_Info="FT测试失败样品" />
+			<ErrorCode ID="9" ENG_Info="Load Isp fail" CHN_Info="烧录Isp失败" />
+			<ErrorCode ID="10" ENG_Info="Chip load info data error fail" CHN_Info="芯片烧录信息数据错误失败" />
+			<ErrorCode ID="11" ENG_Info="Test fail" CHN_Info="测试失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1213" ENG_Name="NFC Test" CHN_Name="NFC测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="NG" CHN_Info="测试不通过" />
+			<ErrorCode ID="2" ENG_Info="No NFC detected" CHN_Info="未检测到NFC" />
+			<ErrorCode ID="3" ENG_Info="Timeout" CHN_Info="超时" />
+			<ErrorCode ID="4" ENG_Info="NFC-INT test failed" CHN_Info="NFC-INT测试失败" />
+			<ErrorCode ID="5" ENG_Info="Get NFC-INT volt failed" CHN_Info="采集NFC-INT电压失败" />
+			<ErrorCode ID="6" ENG_Info="NFC-I2C test failed" CHN_Info="NFC-I2C测试失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1214" ENG_Name="Barcode Test" CHN_Name="二维码测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Scanned Barcode Empty" CHN_Info="扫描的二维码为空" />
+			<ErrorCode ID="2" ENG_Info="Write barcode to chip failed" CHN_Info="二维码写入芯片失败" />
+			<ErrorCode ID="3" ENG_Info="Read barcode from chip failed" CHN_Info="读芯片二维码失败" />
+			<ErrorCode ID="4" ENG_Info="Chip barcode is empty" CHN_Info="芯片二维码为空" />
+			<ErrorCode ID="5" ENG_Info="Chip and scanned barcode mismatch" CHN_Info="扫描二维码与芯片不匹配" />
+			<ErrorCode ID="6" ENG_Info="Load Isp fail" CHN_Info="烧录Isp失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1215" ENG_Name="Force Sensor Test" CHN_Name="Force Sensor测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="No sub test item selected" CHN_Info="测试子项未勾选" />
+			<ErrorCode ID="2" ENG_Info="Read force data fail" CHN_Info="读取芯片force值失败" />
+			<ErrorCode ID="3" ENG_Info="Press cancel" CHN_Info="按压取消" />
+			<ErrorCode ID="4" ENG_Info="Press timeout" CHN_Info="按压超时" />
+			<ErrorCode ID="5" ENG_Info="Rawdata exceed limit" CHN_Info="原始值超限" />
+			<ErrorCode ID="6" ENG_Info="Diffdata exceed limit" CHN_Info="差值超限" />
+			<ErrorCode ID="7" ENG_Info="Open CH9326 device fail" CHN_Info="CH9326串口线打开失败" />
+			<ErrorCode ID="8" ENG_Info="Connect to machine hand fail" CHN_Info="机械手连接失败" />
+			<ErrorCode ID="9" ENG_Info="No axes found in machine hand" CHN_Info="机械手未发现轴" />
+			<ErrorCode ID="10" ENG_Info="Move machine hand timeout" CHN_Info="移动机械手超时" />
+			<ErrorCode ID="11" ENG_Info="Read force data fail" CHN_Info="读取芯片force值失败" />
+			<ErrorCode ID="12" ENG_Info="Put down machine hand fail" CHN_Info="下压机械手失败" />
+			<ErrorCode ID="13" ENG_Info="Put up machine hand fail" CHN_Info="上抬机械手失败" />
+			<ErrorCode ID="14" ENG_Info="Calculate k cofficient fail" CHN_Info="计算系数失败" />
+			<ErrorCode ID="15" ENG_Info="Send k cofficient to chip fail" CHN_Info="下发系数到芯片失败" />
+			<ErrorCode ID="16" ENG_Info="Force calibration diffdata exceed limit" CHN_Info="force校正差值超限" />
+			<ErrorCode ID="17" ENG_Info="Enter force test mode cmd sent fail" CHN_Info="进入Force测试模式命令下发失败" />
+			<ErrorCode ID="18" ENG_Info="Exit force test mode cmd sent fail" CHN_Info="退出Force测试模式命令下发失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1216" ENG_Name="Haptic Test" CHN_Name="Haptic测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Update haptic FW failed" CHN_Info="马达小固件升级失败" />
+			<ErrorCode ID="2" ENG_Info="Haptic value read fail" CHN_Info="马达数据读取失败" />
+			<ErrorCode ID="3" ENG_Info="Haptic check failed" CHN_Info="马达检测失败" />
+			<ErrorCode ID="4" ENG_Info="Reset failed" CHN_Info="复位失败" />
+			<ErrorCode ID="5" ENG_Info="No sub test item selected" CHN_Info="未勾选子测试项" />
+			<ErrorCode ID="6" ENG_Info="Out stable voltage cmd sent fail" CHN_Info="输出恒定电压命令下发失败" />
+			<ErrorCode ID="7" ENG_Info="Stop out voltage cmd sent fail" CHN_Info="停止输出电压命令下发失败" />
+			<ErrorCode ID="8" ENG_Info="Sample ADC fail" CHN_Info="采集ADC值失败" />
+			<ErrorCode ID="9" ENG_Info="ADC value exceed limit" CHN_Info="ADC值超限" />
+			<ErrorCode ID="10" ENG_Info="Out wave voltage cmd sent fail" CHN_Info="输出波动电压命令下发失败" />
+			<ErrorCode ID="11" ENG_Info="Motor not vibrating" CHN_Info="马达未振动" />
+			<ErrorCode ID="12" ENG_Info="Motor vibrating test timeout" CHN_Info="马达振动测试超时" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="8" ENG_Name="Mutual Multi Freq Noise Test" CHN_Name="互容多频Noise测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="NG" CHN_Info="测试不通过" />
+			<ErrorCode ID="2" ENG_Info="Send config failed" CHN_Info="下发配置失败" />
+			<ErrorCode ID="3" ENG_Info="Rawdata jitter exceed limit" CHN_Info="原始值抖动值超限" />
+			<ErrorCode ID="4" ENG_Info="Rawdata break out" CHN_Info="原始值测试中断" />
+			<ErrorCode ID="5" ENG_Info="Enter rawdata mode failed" CHN_Info="切换原始值模式失败" />
+			<ErrorCode ID="6" ENG_Info="Get rawdata failed" CHN_Info="获取原始值失败" />
+			<ErrorCode ID="7" ENG_Info="No config file" CHN_Info="无配置文件" />
+			<ErrorCode ID="8" ENG_Info="Diff exceed limit" CHN_Info="差值超限" />
+			<ErrorCode ID="9" ENG_Info="Enter diff mode failed" CHN_Info="切换差值模式失败" />
+			<ErrorCode ID="10" ENG_Info="Write command failed" CHN_Info="下发频率命令失败" />
+			<ErrorCode ID="11" ENG_Info="Test parameter wrong" CHN_Info="测试参数错误" />
+			<ErrorCode ID="12" ENG_Info="Rawdata exceed max limit" CHN_Info="原始值超上限" />
+			<ErrorCode ID="13" ENG_Info="Rawdata exceed min limit" CHN_Info="原始值超下限" />
+			<ErrorCode ID="14" ENG_Info="Rawdata exceed accord limit" CHN_Info="原始值超相邻偏差限制" />
+			<ErrorCode ID="15" ENG_Info="No sub test selected" CHN_Info="未勾选子测试项" />
+			<ErrorCode ID="16" ENG_Info="Get diff data failed" CHN_Info="获取差值失败" />
+			<ErrorCode ID="17" ENG_Info="RX self direction sum exceeds limit" CHN_Info="Rx方向差值和超限" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="9" ENG_Name="Self Noise Test" CHN_Name="自容Noise测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Test Suspended" CHN_Info="测试中断" />
+			<ErrorCode ID="2" ENG_Info="Chip switch to diff data mode failed" CHN_Info="进入自容原始值模式失败" />
+			<ErrorCode ID="3" ENG_Info="Callback function call error" CHN_Info="回调函数调用错误" />
+			<ErrorCode ID="4" ENG_Info="Get data time out" CHN_Info="获取数据超时" />
+			<ErrorCode ID="5" ENG_Info="Max.data exceeds limit" CHN_Info="数据超限" />
+			<ErrorCode ID="6" ENG_Info="No sub test item" CHN_Info="没有勾选测试子项" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="10" ENG_Name="Key Open Data Test" CHN_Name="Key开路数据测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="NG" CHN_Info="测试失败" />
+			<ErrorCode ID="2" ENG_Info="Test Break" CHN_Info="测试中断" />
+			<ErrorCode ID="3" ENG_Info="Not sub test item" CHN_Info="没有勾选测试子项" />
+			<ErrorCode ID="4" ENG_Info="Enter Key Rawdata mode fail" CHN_Info="进入按键原始值模式失败" />
+			<ErrorCode ID="5" ENG_Info="Get Key rawdata time out" CHN_Info="获取按键原始值数据超时" />
+			<ErrorCode ID="6" ENG_Info="Key raw Max.data exceeds limit" CHN_Info="按键原始值数据最大值超限" />
+			<ErrorCode ID="7" ENG_Info="Key raw Min.data exceeds limit" CHN_Info="按键原始值数据最小值超限" />
+			<ErrorCode ID="8" ENG_Info="Enter Key Diffdata mode fail" CHN_Info="进入按键差值模式失败" />
+			<ErrorCode ID="9" ENG_Info="Get Key Diffdata time out" CHN_Info="获取按键差值数据超时" />
+			<ErrorCode ID="10" ENG_Info="Key diff Max.data exceeds limit" CHN_Info="按键差值数据最大值超限" />
+			<ErrorCode ID="11" ENG_Info="Key diff Min.data exceeds limit" CHN_Info="按键差值数据最小值超限" />
+			<ErrorCode ID="12" ENG_Info="Current config not support Key" CHN_Info="当前配置不支持按键" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="11" ENG_Name="Mutual Diffdata Touch Max Test" CHN_Name="互容差值触摸感应量测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="NG" CHN_Info="测试失败" />
+			<ErrorCode ID="2" ENG_Info="Test Break" CHN_Info="测试中断" />
+			<ErrorCode ID="3" ENG_Info="Test Param Abnormal" CHN_Info="测试参数异常" />
+			<ErrorCode ID="4" ENG_Info="Wait JIG Touch Sign Timeout" CHN_Info="等待JIG触摸信号超时" />
+			<ErrorCode ID="5" ENG_Info="Switch into Mutual Diffdata Sample Mode Fail" CHN_Info="获取互容原始值数据超时" />
+			<ErrorCode ID="6" ENG_Info="Get Mutual Diffdata Timeout" CHN_Info="获取互容差值数据超时" />
+			<ErrorCode ID="7" ENG_Info="The Touch diffdata does not exceed the lower threshold" CHN_Info="触摸差值未超过设定最小值" />
+			<ErrorCode ID="8" ENG_Info="The Touch diffdata does exceed the upper threshold" CHN_Info="触摸差值超过设定最大值" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="13" ENG_Name="Sensor Speed Test" CHN_Name="Sensor Speed测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="NG" CHN_Info="测试失败" />
+			<ErrorCode ID="2" ENG_Info="Send Start Freq Fail" CHN_Info="发送初始频点失败" />
+			<ErrorCode ID="3" ENG_Info="Start Raw Data Get Fail" CHN_Info="初始互容原始数据获取失败" />
+			<ErrorCode ID="4" ENG_Info="Send End Freq Fail" CHN_Info="发送结尾频点失败" />
+			<ErrorCode ID="5" ENG_Info="End Raw Data Get Fail" CHN_Info="结尾互容原始数据获取失败" />
+			<ErrorCode ID="6" ENG_Info="Raw Data Diff Value exceed the threshold" CHN_Info="互容原始数据差值超限" />
+			<ErrorCode ID="7" ENG_Info="Raw Data Tx Diff Value exceed the threshold" CHN_Info="互容原始数据Tx方向差值超限" />
+			<ErrorCode ID="8" ENG_Info="Raw Data Rx Diff Value exceed the threshold" CHN_Info="互容原始数据Rx方向差值超限" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="219" ENG_Name="Mbist Test" CHN_Name="Mbist测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Not Support Test" CHN_Info="不支持测试" />
+			<ErrorCode ID="2" ENG_Info="No sub Test Item" CHN_Info="没有子测试项" />
+			<ErrorCode ID="3" ENG_Info="Mbist Bin Data Error" CHN_Info="Mbist固件数据错误" />
+			<ErrorCode ID="4" ENG_Info="Mbist Bin Load Init Fail" CHN_Info="Mbist固件烧录初始化失败" />
+			<ErrorCode ID="5" ENG_Info="Mbist Bin Load Fail" CHN_Info="Mbist固件烧录失败" />
+			<ErrorCode ID="6" ENG_Info="Mbist Code Not Running " CHN_Info="Mbist固件未运行" />
+			<ErrorCode ID="7" ENG_Info="Mbist Code Not Ready" CHN_Info="Mbist固件未准备好" />
+			<ErrorCode ID="8" ENG_Info="Channel Switch Test Enable Fail" CHN_Info="通道开关测试使能失败" />
+			<ErrorCode ID="9" ENG_Info="Channel Switch Test Wait Result Timeout" CHN_Info="通道开关测试等待结果超时" />
+			<ErrorCode ID="10" ENG_Info="Channel Switch Test Read Result Fail" CHN_Info="通道开关测试读取结果失败" />
+			<ErrorCode ID="11" ENG_Info="Channel Switch Test Result Checksum Fail" CHN_Info="通道开关测试结果校验失败" />
+			<ErrorCode ID="12" ENG_Info="Channel Switch Test NG" CHN_Info="通道开关测试失败" />
+			<ErrorCode ID="13" ENG_Info="Sram Test Enable Fail" CHN_Info="Sram测试使能失败" />
+			<ErrorCode ID="14" ENG_Info="Sram Test Wait Result Timeout" CHN_Info="Sram测试等待结果超时" />
+			<ErrorCode ID="15" ENG_Info="Sram Test Read Result Fail" CHN_Info="Sram测试读取结果失败" />
+			<ErrorCode ID="16" ENG_Info="Sram Test Bank0 NG" CHN_Info="Sram测试Bank0异常" />
+			<ErrorCode ID="17" ENG_Info="Sram Test Bank1 NG" CHN_Info="Sram测试Bank1异常" />
+			<ErrorCode ID="18" ENG_Info="Sram Test Bank2 NG" CHN_Info="Sram测试Bank2异常" />
+			<ErrorCode ID="19" ENG_Info="Sram Test DRAM NG" CHN_Info="Sram测试DRAM异常" />
+			<ErrorCode ID="20" ENG_Info="Sram Test NG" CHN_Info="Sram测试失败" />
+			<ErrorCode ID="21" ENG_Info="ISP code load fail" CHN_Info="ISP烧录失败" />
+			<ErrorCode ID="22" ENG_Info="Load Mbist to IC2 fail" CHN_Info="烧录Mbist到IC2失败" />
+			<ErrorCode ID="23" ENG_Info="IC2 Mbist test fail" CHN_Info="IC2 Mbist测试失败" />
+			<ErrorCode ID="24" ENG_Info="IC2 Sram test result abnormal" CHN_Info="IC2 Sram测试结果异常" />
+			<ErrorCode ID="25" ENG_Info="Sram Test Bank0 NG" CHN_Info="Sram测试IC2 Bank0异常" />
+			<ErrorCode ID="26" ENG_Info="Sram Test Bank1 NG" CHN_Info="Sram测试IC2 Bank1异常" />
+			<ErrorCode ID="27" ENG_Info="Sram Test Bank2 NG" CHN_Info="Sram测试IC2 Bank2异常" />
+			<ErrorCode ID="28" ENG_Info="Sram Test DRAM NG" CHN_Info="Sram测试IC2 DRAM异常" />
+			<ErrorCode ID="29" ENG_Info="4K Memory alloc fail" CHN_Info="4K 空间申请失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1217" ENG_Name="ADC Jitter Check Test" CHN_Name="ADC抖动检查">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Test suspended" CHN_Info="测试中断" />
+			<ErrorCode ID="2" ENG_Info="ADC jitter value beyond the upper limit" CHN_Info="ADC抖动超限" />
+			<ErrorCode ID="3" ENG_Info="Switch to ADC jitter check mode failed" CHN_Info="进入ADC检查模式失败" />
+			<ErrorCode ID="4" ENG_Info="Sample data time out" CHN_Info="采样数据超时" />
+			<ErrorCode ID="5" ENG_Info="Enter to Rawdata mode fail" CHN_Info="进入互容原始值模式失败" />
+			<ErrorCode ID="6" ENG_Info="Start to ADC metastability check fail" CHN_Info="开始ADC亚稳态测试失败" />
+			<ErrorCode ID="7" ENG_Info="Get ADC metastability check result fail" CHN_Info="获取ADC亚稳态测试结果失败" />
+			<ErrorCode ID="8" ENG_Info="ADC exist metastability " CHN_Info="ADC存在亚稳态 " />
+			<ErrorCode ID="9" ENG_Info="Not support ADC check test item " CHN_Info="不支持ADC测试" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1218" ENG_Name="Drv Sense as GIO Test" CHN_Name="驱动感应GIO测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Test Suspended" CHN_Info="测试中断" />
+			<ErrorCode ID="2" ENG_Info="Parameters error" CHN_Info="参数错误" />
+			<ErrorCode ID="3" ENG_Info="Enter self rawdata mode failed" CHN_Info="进入自容原始值模式失败" />
+			<ErrorCode ID="4" ENG_Info="Get self rawdata failed" CHN_Info="获取自容原始值失败" />
+			<ErrorCode ID="5" ENG_Info="Self rawdata beyond limit" CHN_Info="自容原始值超限" />
+			<ErrorCode ID="6" ENG_Info="Enter coord mode failed" CHN_Info="进入坐标模式失败" />
+			<ErrorCode ID="7" ENG_Info="Read frequency base and doubleing failed" CHN_Info="获取基频和倍频失败" />
+			<ErrorCode ID="8" ENG_Info="Write test info to chip failed" CHN_Info="写入测试信息到芯片失败" />
+			<ErrorCode ID="9" ENG_Info="Verify chip test info failed" CHN_Info="芯片测试信息校验失败" />
+			<ErrorCode ID="10" ENG_Info="Write confirm cmd failed" CHN_Info="下发确认命令失败" />
+			<ErrorCode ID="11" ENG_Info="Wait confirm cmd ack failed" CHN_Info="等待命令ACK失败" />
+		</ErrorCodeList>
+	</Item>
+	<Item ID="1219" ENG_Name="IC CALC UNIT Test" CHN_Name="IC运算单元测试">
+		<ErrorCodeList>
+			<ErrorCode ID="0" ENG_Info="PASS" CHN_Info="测试通过" />
+			<ErrorCode ID="1" ENG_Info="Not Support this item" CHN_Info="不支持该项测试" />
+			<ErrorCode ID="2" ENG_Info="Address Param error" CHN_Info="参数错误，地址非法" />
+			<ErrorCode ID="3" ENG_Info="Load Test Bin Fail" CHN_Info="下载测试BIN失败" />
+			<ErrorCode ID="4" ENG_Info="Read Checking Address Val Fail" CHN_Info="读取检测地址值失败" />
+			<ErrorCode ID="5" ENG_Info="Calc Unit Exist Abnormal" CHN_Info="运算单元存在异常" />
+		</ErrorCodeList>
+	</Item>
+</TestItemList>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GTMTReTestConfig>
+	<ReTestEnable>0</ReTestEnable><!--NG自动复测使能位/-->
+	<MaxReTestyCnt>1</MaxReTestyCnt><!--NG自动复测次数，默认1次/-->
+	<SaveReTestLogOpt>1</SaveReTestLogOpt><!--复测中间结果保存，默认保存/-->
+	<ReTestCondition>
+		<TestItemCondition>
+			<Item><!--复测测试项1设置/-->
+				<ItemId>5</ItemId><!--测试项id,可以查表ErrorCodeList.xml/-->
+				<ReTestWhenItemNg>1</ReTestWhenItemNg><!--是否需要复测，1为需要/-->
+				<ErrorCode></ErrorCode><!--指定需要复测的错误码/-->
+				<SubItem>
+					<ItemId>0</ItemId><!--子测试项id，如果存在/-->
+					<ErrorCode>1</ErrorCode><!--指定需要复测的错误码/-->
+				</SubItem>
+			</Item>
+			<Item><!--复测测试项n设置/-->
+			</Item>
+		</TestItemCondition>
+	</ReTestCondition>	
+</GTMTReTestConfig>

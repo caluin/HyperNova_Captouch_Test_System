@@ -347,12 +347,12 @@ if __name__ == '__main__':
     import sys
 
     # invoke glass system reset
-    os.system("adb wait-for-device && adb root && adb remount")
-    os.system("adb shell mfg_tool mcu raw set dev")
-    os.system("adb shell mfg_tool mcu raw set w ConfigHallInactiveOverride 1")
-    os.system("adb shell mfg_tool mcu reset")
-    os.system("adb shell mfg_tool mcu raw captouch force-streaming")
-    os.system("adb shell mfg_tool mcu raw loglevel capt trace")
+    # os.system("adb wait-for-device && adb root && adb remount")
+    # os.system("adb shell mfg_tool mcu raw set dev")
+    # os.system("adb shell mfg_tool mcu raw set w ConfigHallInactiveOverride 1")
+    # os.system("adb shell mfg_tool mcu reset")
+    # os.system("adb shell mfg_tool mcu raw captouch force-streaming")
+    # os.system("adb shell mfg_tool mcu raw loglevel capt trace")
 
     # initialize shared memory for test fixture
     test_fixture_shared_memory_handler = TestFixture.shared_memory_initialization()

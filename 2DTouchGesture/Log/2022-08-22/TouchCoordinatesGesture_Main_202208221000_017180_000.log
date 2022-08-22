@@ -1,0 +1,5 @@
+2022-08-22 10:00:05.523 [17376] [SPECIAL] -----------------  log4z thread started!   ----------------------------
+2022-08-22 10:00:05.553 [17376] [SPECIAL] logger id=0 key=Main name=Main path=C:\Users\wenhaochen\Downloads\2DTouchGesture\Log\2022-08-22\ level=1 display=true
+2022-08-22 10:00:05.805 [15280] [SPECIAL] [CommDaemon.cpp][531] 5555 window[0] OpenDevice[0]("\\.\COM7")
+2022-08-22 10:00:05.805 [15280] [SPECIAL] [Stm32FxBoard.cpp][3496] ExePullInCallback \\.\COM7
+2022-08-22 10:00:38.636 [10732] [SPECIAL] [ProtoManager.cpp][138] CProtoManager::RcvProtoProcFunc Thread End

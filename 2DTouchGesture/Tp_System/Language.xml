@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<LanguageLibrary>
+	<item Key="StartTest" ENG="Start Test" CHN_S="开始测试"> </item>
+	<item Key="StopTest" ENG="Stop Test" CHN_S="停止测试"> </item>
+	<item Key="StartAllTest" ENG="StartAllTest" CHN_S="开始所有测试"> </item>
+	<item Key="StopAllTest" ENG="StopAllTest" CHN_S="停止所有测试"> </item>
+	<item Key="Continue Test?" ENG="Continue Test?" CHN_S="继续测试"> </item>
+	<item Key="DisConnected" ENG="Disconnected" CHN_S="已断开"> </item>
+	<item Key="Connected" ENG="Connected" CHN_S="已连接"> </item>
+	
+	<!-- test item name define start/-->
+	<item Key="5" ENG="Mutual Rawdata Test" CHN_S="互容原始值测试"> </item>
+	<item Key="5_0" ENG="Rawdata Upper Limit Test" CHN_S="原始值最大值测试"> </item>
+	<item Key="5_1" ENG="Rawdata Lower Limit Test" CHN_S="原始值最小值测试"> </item>
+	<item Key="5_2" ENG="Keydata Upper Limit Test" CHN_S="按键原始值最大值测试"> </item>
+	<item Key="5_3" ENG="Keydata Lower Limit Test" CHN_S="按键原始值最小值测试"> </item>
+	<item Key="5_4" ENG="Adjcent Deviation Test" CHN_S="相邻最大偏差测试"> </item>
+	<item Key="5_5" ENG="Offset Test" CHN_S="整屏最大偏差测试"> </item>
+	<item Key="5_6" ENG="Uniform Test" CHN_S="数据一致性测试"> </item>
+	<item Key="5_7" ENG="Rawdata Jitter Test" CHN_S="原始值抖动最大值测试"> </item>
+	<item Key="5_8" ENG="TxRx Offset Test" CHN_S="原始值通道偏差测试"> </item>
+	<item Key="5_9" ENG="AAT Test" CHN_S="AAT二次相邻偏差测试"> </item>
+	<item Key="5_10" ENG="NAAT Test" CHN_S="NAAT二次相邻偏差测试"> </item>
+	
+	<item Key="6" ENG="Mutual Diffdata Test" CHN_S="互容差值测试"> </item>
+	<item Key="6_0" ENG="Diffdata Jitter Test" CHN_S="差值抖动最大值测试"> </item>
+	<item Key="6_1" ENG="Rx Diffdata Sum Test" CHN_S="RX方向差值和最大值测试"> </item>
+	
+	<item Key="7" ENG="Self Rawdata Test" CHN_S="自容原始值测试"> </item>
+	<item Key="7_0" ENG="Self Rawdata Upper Limit Test" CHN_S="自容原始值最大值测试"> </item>
+	<item Key="7_1" ENG="Self Rawdata Lower Limit Test" CHN_S="自容原始值最小值测试"> </item>
+	
+	<item Key="8" ENG="Mutual Multi Freq Noise Test" CHN_S="互容多频Noise测试"> </item>
+	
+	<item Key="9" ENG="Self Rawdata Noise Test" CHN_S="自容原始值Noise测试"> </item>
+	<item Key="9_0" ENG="Self Rawdata Jitter Test" CHN_S="自容原始值抖动值测试"> </item>	
+	
+	<item Key="10" ENG="Key Open Data Test" CHN_S="Key开路数据测试"> </item>
+	<item Key="10_0" ENG="Key Rawdata Test" CHN_S="Key原始值数据测试"> </item>
+	<item Key="10_1" ENG="Key Diffdata Test" CHN_S="Key差值数据测试"> </item>
+	
+	<item Key="11" ENG="Mutual Diffdata Touch Max Test" CHN_S="互容差值触摸感应量测试"> </item>
+	
+	<item Key="12" ENG="Self Diffdata Test" CHN_S="自容差值测试"> </item>
+	<item Key="12_0" ENG="Self Diffdata Jitter Test" CHN_S="自容差值抖动最大值测试"> </item>
+	
+	<item Key="13" ENG="Sensor Speed Test" CHN_S="Sensor Speed测试"> </item>
+	
+	<item Key="200" ENG="Short Test" CHN_S="短路测试"> </item>
+	<item Key="201" ENG="Rst Voltage Test" CHN_S="Rst管脚电压测试"> </item>
+	<item Key="202" ENG="I2C Voltage Test" CHN_S="I2C管脚电压测试"> </item>
+	<item Key="203" ENG="INT Voltage Test" CHN_S="INT管脚电压测试"> </item>
+	<item Key="204" ENG="Pin1 Test" CHN_S="IO1管脚测试"> </item>
+	<item Key="205" ENG="Pin2 Test" CHN_S="IO2管脚测试"> </item>
+	<item Key="213" ENG="Pin3 Test" CHN_S="IO3管脚测试"> </item>
+	<item Key="214" ENG="Pin4 Test" CHN_S="IO4管脚测试"> </item>
+	<item Key="215" ENG="Pin5 Test" CHN_S="IO5管脚测试"> </item>
+	<item Key="216" ENG="Pin6 Test" CHN_S="IO6管脚测试"> </item>
+	<item Key="217" ENG="I2C Dev Test" CHN_S="I2C设备测试"> </item>
+	<item Key="206" ENG="Active Current Test" CHN_S="工作电流测试"> </item>
+	<item Key="207" ENG="Sleep Current Test" CHN_S="睡眠电流测试"> </item>
+	<item Key="208" ENG="Int Cap Test" CHN_S="INT电容测试"> </item>
+	<item Key="209" ENG="SensorID Test" CHN_S="SensorID测试"> </item>
+	<item Key="210" ENG="Gesture Test" CHN_S="手势测试"> </item>
+	<item Key="211" ENG="Spi Voltage Test" CHN_S="Spi管脚电压测试"> </item>
+	<item Key="212" ENG="Ext Osc Test" CHN_S="外部晶振测试"> </item>
+	<item Key="218" ENG="Register Value Check" CHN_S="寄存器值检测"> </item>
+	<item Key="219" ENG="Mbist Test" CHN_S="Mbist测试"> </item>
+	<item Key="220" ENG="Pen Channel Abnormal Test" CHN_S="笔通道异常测试"> </item>
+	
+	<item Key="600" ENG="Version Test" CHN_S="版本号测试"> </item>
+	<item Key="601" ENG="Firmware Run State" CHN_S="固件运行状态测试"> </item>
+	<item Key="602" ENG="9886 Reg Check" CHN_S="9886寄存器检测"> </item>
+	
+	<item Key="800" ENG="Key Touch Test" CHN_S="按键测试"> </item>
+	<item Key="801" ENG="Finger Line Test" CHN_S="手划线测试"> </item>
+	<item Key="801_0" ENG="Four Point Test" CHN_S="四角测试"> </item>	
+	<item Key="801_1" ENG="Diagonal Test" CHN_S="线性测试"> </item>	
+	<item Key="801_2" ENG="Border Test" CHN_S="四边测试"> </item>
+	<item Key="802" ENG="Pen Line Test" CHN_S="笔划线测试"> </item>	
+	<item Key="802_0" ENG="Four Point Test" CHN_S="四角测试"> </item>	
+	<item Key="802_1" ENG="Diagonal Test" CHN_S="线性测试"> </item>	
+	<item Key="802_2" ENG="Border Test" CHN_S="四边测试"> </item>	
+	<item Key="803" ENG="TouchPad Line Test" CHN_S="TouchPad划线测试"> </item>		
+	<item Key="804" ENG="Multi Key Test" CHN_S="虚拟多按键测试"> </item>	
+	<item Key="805" ENG="Slider Touch Test" CHN_S="滑条触摸测试"> </item>
+	
+	<item Key="1200" ENG="Config Test" CHN_S="配置测试"> </item>
+	<item Key="1201" ENG="Flash Test" CHN_S="Flash测试"> </item>	
+	<item Key="1202" ENG="Send Special Config" CHN_S="发送特殊配置"> </item>
+	<item Key="1203" ENG="Send Special Firmware" CHN_S="发送特殊固件"> </item>
+	<item Key="1204" ENG="Custom Info Test" CHN_S="用户信息"> </item>
+	<item Key="1205" ENG="Check Chip Test Result" CHN_S="检查芯片测试结果"> </item>
+	<item Key="1206" ENG="Check Module Test Result" CHN_S="检查模组测试结果"> </item>	
+	<item Key="1207" ENG="Recover Config" CHN_S="恢复配置"> </item>
+	<item Key="1208" ENG="Save Result To IC Storage" CHN_S="存储测试结果"> </item>
+	<item Key="1209" ENG="UID Test" CHN_S="UID测试"> </item>
+	<item Key="1210" ENG="LCD Noise Detect" CHN_S="LCD 噪点检测"> </item>
+	<item Key="1211" ENG="FPC Test" CHN_S="FPC测试"> </item>
+	<item Key="1212" ENG="Check Chip Key Info" CHN_S="检查芯片关键信息"> </item>
+	<item Key="1213" ENG="NFC Test" CHN_S="NFC测试"> </item>
+	<item Key="1214" ENG="Barcode Test" CHN_S="二维码测试"> </item>
+	<item Key="1215" ENG="Force Sensor Test" CHN_S="Force Sensor测试"> </item>
+	<item Key="1216" ENG="Haptic Test" CHN_S="Haptic测试"> </item>
+	<item Key="1217" ENG="ADC Check Test" CHN_S="ADC检查"> </item>
+	<item Key="1218" ENG="Drv Sense As GIO Test" CHN_S="驱动感应GIO测试"> </item>
+	<item Key="1219" ENG="IC Calc Unit Test" CHN_S="IC算子测试"> </item>
+	<!-- test item name define end/-->
+	
+	<item Key="TestPass" ENG=" Pass" CHN_S=" 通过"> </item>	
+	<item Key="TestFail" ENG=" Fail" CHN_S=" 失败"> </item>
+	<item Key="ErrCode" ENG=" Error Code" CHN_S="错误码"> </item>
+	<item Key="UnkownErr" ENG=" UnKown Error" CHN_S="未知错误"> </item>
+	<item Key="TestFinish" ENG="Test Finished" CHN_S="测试结束"> </item>
+	<item Key="UserStop" ENG="User Stop Test" CHN_S="用户手动结束测试"> </item>
+	<item Key="OrderSetFailed" ENG="Order import failed!,please check!" CHN_S="工单加载错误，请检查！"> </item>
+	<item Key="SwitchLanguageSuccessed" ENG="Operate successfully, please restart the software!" CHN_S="设置成功，请重启工具！"> </item>
+	<item Key="SwitchLanguageFailed" ENG="Operate failed!" CHN_S="设置失败！"> </item>
+	<item Key="Please check module connect status!" ENG="Please check module connect status!" CHN_S="请检查模组连接状态!"> </item>
+	<item Key="Scan Same Barcode" ENG="Scan existed barcode" CHN_S="扫描到已存在的二维码"> </item>
+	<item Key="test needs proceeding or not?" ENG="test needs proceeding or not?" CHN_S="是否依然进行测试？"> </item>
+	<item Key="Please pull out module then pull a new one!" ENG="Please pull out module then pull a new one!" CHN_S="请先拔出模组然后再接入新的模组!"> </item>
+	<item Key="Please pull out cob then pull a new one!" ENG="Please pull out cob then pull a new one!" CHN_S="请先拔出Cob然后再接入新的Cob!"> </item>
+	<item Key="Fw Updating" ENG="Firmware Version Testing" CHN_S="版本号测试中"> </item>
+	<item Key="LCD noise detect must select spec fw update" ENG="LCD noise detect must select spec fw update" CHN_S="LCD噪点检测选中后必须选中整机固件升级"> </item>
+	<item Key="FPC press confirm" ENG="Please Press FPC , after that click button 'confirm'" CHN_S="请按压FPC,然后点击确认"> </item>
+	<item Key="Is the motor vibrating" ENG="Is the motor vibrating?" CHN_S="马达是否在振动?"> </item>
+	<item Key="IDConfirm" ENG="Confirm" CHN_S="确认"> </item>
+	<item Key="Please Check!" ENG="Please Check!" CHN_S="请检查!"> </item>
+	<item Key="IDCannel" ENG="Cannel" CHN_S="取消"> </item>
+	<item Key="IDYes" ENG="Yes" CHN_S="是"> </item>
+	<item Key="IDNo" ENG="No" CHN_S="否"> </item>
+	<item Key="Duration" ENG="Duration" CHN_S="耗时"/>
+	<item Key="Batch" ENG="LOT" CHN_S="批次"> </item>
+	<item Key="Station" ENG="WorkStation" CHN_S="工位"> </item>
+	<item Key="WorkerID" ENG="WorkerID" CHN_S="操作员"> </item>
+	<item Key="TakeEffectAfterLock" ENG="Edit box take effect after locked " CHN_S="编辑框锁定后生效"> </item>
+	<item Key="Error" ENG="Error" CHN_S="错误"> </item>
+	<item Key="OpenFileFailed" ENG="Open file failed" CHN_S="打开文件失败"> </item>
+	<item Key="GetFileLengthFailed" ENG="Get file length failed" CHN_S="获取文件长度失败"> </item>
+	<item Key="LoadBinFileTooLarge" ENG="Load Fw BIN File too Large" CHN_S="加载Bin文件失败"> </item>
+	<item Key="Board Number is dismatch, please check!" ENG="Board Number is dismatch, please reset!" CHN_S="测试板编号不匹配，请重新设置!"> </item>
+	<item Key="Create test Result file path fail" ENG="Create test Result file path fail" CHN_S="测试结果文件路径创建失败"/>
+	<item Key="genSpecLogFile python script call fail" ENG="genSpecLogFile python script call fail" CHN_S="genSpecLogFile python脚本调用失败"/>
+	<item Key="Test Result file save fail" ENG="Test Result file save fail" CHN_S="测试结果文件保存失败"/>
+	<item Key="Please check the memory size" ENG="Please check the memory size" CHN_S="请检查内存"/>
+	<item Key="QRCode length" ENG="QRCode length" CHN_S="二维码长度"> </item>
+	<item Key="QRCode key word" ENG="QRCode key word" CHN_S="二维码关键字"> </item>
+	<item Key="Illegal QRCode" ENG="Illegal QRCode" CHN_S="非法的二维码"/>
+	<item Key="QRCode Input OK" ENG="QRCode Input OK" CHN_S="二维码输入成功"/>
+	<item Key="Waiting for Test" ENG="Waiting for Test" CHN_S="等待测试"/>
+	<item Key="Waiting for input" ENG="Waiting for input" CHN_S="等待输入"/>
+	<item Key="Board Update..." ENG="Board Update...,Please don't operate!" CHN_S="测试板正在升级,请勿操作！"/>
+	<item Key="Board Update OK!" ENG="Board Update OK!" CHN_S="测试板升级成功！"/>
+	<item Key="OK" ENG="OK" CHN_S="OK"/>
+	<item Key="NG" ENG="NG" CHN_S="NG"/>
+	<item Key="ERROR" ENG="ERROR" CHN_S="ERROR"/>
+	<item Key="READY" ENG="READY" CHN_S="READY"/>
+	<item Key="WAIT" ENG="WAIT" CHN_S="WAIT"/>
+	<item Key="BREAK" ENG="BREAK" CHN_S="BREAK"/>
+	<item Key="Device[%d]current %8d uA,exceeds limit %8d uA" ENG="Device[%d]current %8d uA,exceeds limit %8d uA" CHN_S="设备[%d]电流%8d uA，超过阈值%8d uA"/>
+	<item Key="Board SN Dismatch,Please Check！" ENG="Board SN Dismatch,Please Check！" CHN_S="设备SN码不匹配，请检查"/>
+	<item Key="Board SN %d is wrong" ENG="Board SN %d is wrong" CHN_S="测试板SN码%d错误"/>
+	<item Key="right is %d" ENG="right is %d" CHN_S="正确为%d"/>
+	<item Key="pre test result is" ENG="pre test result is" CHN_S="上一次测试结果是"/>
+	<item Key="Read chip UID fail" ENG="Read chip UID fail" CHN_S="读取芯片UID失败"> </item>
+	<item Key="Chip with same UID has been tested" ENG="Chip with same UID has been tested" CHN_S="相同UID芯片重复测试"> </item>
+	<item Key="Read chip project id fail" ENG="Read chip project id failed" CHN_S="读取芯片ProjectId失败"> </item>
+	<item Key="Project id does not match" ENG="Project id does not match" CHN_S="芯片ProjectId不匹配"> </item>
+	<item Key="in testing,please wait test finish" ENG="in testing,please wait test finish" CHN_S="还在测试中,请等待测试结束"/>
+	<item Key="Please check hardware and re-open GTM tool" ENG="Please check hardware and re-open GTM tool" CHN_S="请检查硬件环境并重新打开GTM"/>
+	<item Key="BoardContected" ENG="Board Connected" CHN_S="测试板已连接"> </item>
+	<item Key="BoardDiscontected" ENG="Board Disconnected" CHN_S="测试板未连接"> </item>
+	<item Key="TPContected" ENG="TP Connected" CHN_S="模组已连接"> </item>
+	<item Key="TPDiscontected" ENG="TP Disconnected" CHN_S="模组未连接"> </item>
+	<item Key="SwitchLanguageSuccessed" ENG="Operate successfully, please restart the software!" CHN_S="设置成功，请重启工具！"> </item>
+	<item Key="SwitchLanguageFailed" ENG="Operate failed!" CHN_S="设置失败！"> </item>
+	<item Key="[Blue value] " ENG="[Blue value] " CHN_S="蓝色数值:"> </item>
+	<item Key="[Red value] " ENG="[Red value] " CHN_S="红色数值:"> </item>
+	<item Key="[Yellow value] " ENG="[Yellow value] " CHN_S="黄色数值:"> </item>
+	<item Key="[Green value] " ENG="[Green value] " CHN_S="绿色数值:"> </item>
+	<item Key="special node,press left mouse to set." ENG="special node,press left mouse to set." CHN_S="特殊节点,通过鼠标左键设置."> </item>
+	<item Key="select show data type by right mouse button menu." ENG="select show data type by right mouse button menu." CHN_S="显示数据类型,通过鼠标右键菜单设置."> </item>
+	<item Key="upper max limit" ENG="upper order max limit." CHN_S="超过工单最大设置"> </item>
+	<item Key="lower min limit" ENG="lower order min limit." CHN_S="低于工单最小设置"> </item>
+	<item Key="ShortInfo:" ENG="ShortInfo:" CHN_S="短路信息:"> </item>
+	<item Key="RawDataInfo:" ENG="RawDataInfo:" CHN_S="原始值信息:"> </item>
+	<item Key="Maximal:" ENG="Maximal:" CHN_S="最大值:"> </item>
+	<item Key="Minimal:" ENG="Minimal:" CHN_S="最小值:"> </item>
+	<item Key="Maximal - Minimal:" ENG="Maximal-Minimal:" CHN_S="最大值-最小值:"> </item>
+	<item Key="Maximal / Minimal:" ENG="Maximal/Minimal:" CHN_S="最大值/最小值:"> </item>
+	<item Key="Average:" ENG="Average:" CHN_S="平均值:"> </item>
+	<item Key="Standard Deviation:" ENG="Std Deviation:" CHN_S="标准差:"> </item>
+	<item Key="SelfMax:" ENG="Self Max:" CHN_S="自容最大值:"> </item>
+	<item Key="SelfMin:" ENG="Self Min:" CHN_S="自容最小值:"> </item>
+	<item Key="SelfAverage:" ENG="Self Average:" CHN_S="自容平均值:"> </item>
+	<item Key="Self Std Deviation:" ENG="Self Std Deviation:" CHN_S="自容标准差:"> </item>
+	<item Key="DataType:" ENG="DataType:" CHN_S="数据内容:	"> </item>
+	<item Key="[RawData]" ENG="[Mutual RawData]" CHN_S="【互容原始值】"> </item>
+	<item Key="[RefData]" ENG="[Mutual RefData]" CHN_S="【互容基准值】"> </item>
+	<item Key="[DiffData]" ENG="[Mutual DiffData]" CHN_S="【互容差值】"> </item>
+	<item Key="Attenuation ratio:" ENG="Attenuation ratio:" CHN_S="衰减比:"> </item>
+	<item Key="Save frame number:" ENG="Save frame number:" CHN_S="保存帧数:"> </item>
+	<item Key="[Max Rawdata]" ENG="[Max Rawdata]" CHN_S="【全屏最大值】"> </item>
+	<item Key="[Min Rawdata]" ENG="[Min Rawdata]" CHN_S="【全屏最小值】"> </item>
+	<item Key="[Self RawData]" ENG="[Self RawData]" CHN_S="【自容原始值】"> </item>
+	<item Key="[Self DiffData]" ENG="[Self DiffData]" CHN_S="【自容差值】"> </item>
+	<item Key="[Stylus RawData]" ENG="[Stylus RawData]" CHN_S="【主动笔原始值】"> </item>
+	<item Key="[Max Self Rawdata]" ENG="[Max Self Rawdata]" CHN_S="【自容全屏最大值】"> </item>
+	<item Key="[Min Self Rawdata]" ENG="[Min Self Rawdata]" CHN_S="【自容全屏最小值】"> </item>
+	<item Key="[Max Adjacent deviation]" ENG="[Max Adjacent deviation]" CHN_S="【相邻最大偏差】"> </item>
+	<item Key="[TxRx Offset Upper]" ENG="[TxRx Offset Upper]" CHN_S="【TxRx偏差上限值】"> </item>
+	<item Key="[TxRx Offset Lower]" ENG="[TxRx Offset Lower]" CHN_S="【TxRx偏差下限值】"> </item>
+	<item Key="[Tx Offset Upper]" ENG="[Tx Offset Upper]" CHN_S="【Tx偏差上限值】"> </item>
+	<item Key="[Rx Offset Upper]" ENG="[Rx Offset Upper]" CHN_S="【Rx偏差上限值】"> </item>
+	<item Key="[Tx Offset Lower]" ENG="[Tx Offset Lower]" CHN_S="【Tx偏差下限值】"> </item>
+	<item Key="[Rx Offset Lower]" ENG="[Rx Offset Lower]" CHN_S="【Rx偏差下限值】"> </item>
+	<item Key="[Sensor Speed RawData Diff Offset]" ENG="[Sensor Speed RawData Diff Offset]" CHN_S="【Sensor Speed差值阈值】"> </item>
+	<item Key="[Sensor Speed RawData Tx Diff Offset]" ENG="[Sensor Speed RawData Tx Diff Offset]" CHN_S="【Sensor Speed Tx方向差值阈值】"> </item>
+	<item Key="[Sensor Speed RawData Rx Diff Offset]" ENG="[Sensor Speed RawData Rx Diff Offset]" CHN_S="【Sensor Speed Rx方向差值阈值】"> </item>
+	<item Key="[Max Key Rawdata]" ENG="[Max Key Rawdata Limit]" CHN_S="【按键最大值阈值】"> </item>
+	<item Key="[Min Key Rawdata]" ENG="[Min Key Rawdata Limit]" CHN_S="【按键最小值阈值】"> </item>
+	<item Key="[Key RawData]" ENG="[Key RawData]" CHN_S="【按键原始值】"> </item>
+	<item Key="[Key DiffData]" ENG="[Key DiffData]" CHN_S="【按键差值】"> </item>
+	<item Key="[Key RefData]" ENG="[Key RefData]" CHN_S="【按键基准值】"> </item>
+	<item Key="[Max Key/Slider Rawdata]" ENG="[Max Key/Slider Rawdata Limit]" CHN_S="【按键或滑条最大值阈值】"> </item>
+	<item Key="[Min Key/Slider Rawdata]" ENG="[Min Key/Slider Rawdata Limit]" CHN_S="【按键或滑条最小值阈值】"> </item>
+	<item Key="[Key/Slider RawData]" ENG="[Key/Slider RawData]" CHN_S="【按键或滑条原始值】"> </item>
+	<item Key="[Key/Slider DiffData]" ENG="[Key/Slider DiffData]" CHN_S="【按键或滑条差值】"> </item>
+	<item Key="[Key/Slider RefData]" ENG="[Key/Slider RefData]" CHN_S="【按键或滑条基准值】"> </item>
+	<item Key="[TxRx Channel Sum Diff]" ENG="[TxRx Channel Sum Diff]" CHN_S="【TxRx行列和差上限值】"> </item>
+	<item Key="Zooming para " ENG="Zooming para " CHN_S="调整判定参数"> </item>
+	<item Key="Next data type" ENG="Next data type" CHN_S="下一数据类型"> </item>
+	<item Key="Zoooming ini" ENG="Zoooming ini" CHN_S="判定参数放缩"> </item>
+	<item Key="Zoooming Max Data" ENG="Zoooming Max Data" CHN_S="最大值放缩"> </item>
+	<item Key="Zoooming Min Data" ENG="Zoooming Min Data" CHN_S="最小值放缩"> </item>
+	<item Key="Zoooming Adjacent" ENG="Zoooming Adjacent" CHN_S="相邻偏差放缩"> </item>
+	<item Key="Cancel" ENG="Cancel" CHN_S="取消"> </item>
+	<item Key="Max zoom multiples should be greater than %6.2f" ENG="Max zoom multiples should be greater than %6.2f" CHN_S="最大值放缩倍数应该大于%6.2f"> </item>
+	<item Key="Min zoom multiples should be greater than %6.2f" ENG="Min zoom multiples should be greater than %6.2f" CHN_S="最小值放缩倍数应该大于%6.2f"> </item>
+	<item Key="Adjacent deviation zoom multiples should be greater than %6.2f" ENG="Adjacent deviation zoom multiples should be greater than %6.2f" CHN_S="相邻偏差放缩倍数应该大于%6.2f"> </item>
+	<item Key="Min data zooming (%d) > Max data zooming(%d)" ENG="Min data zooming (%d) > Max data zooming(%d)" CHN_S="放缩后的全屏最小值(%d)大于放缩后的全屏最大值(%d)"> </item>
+	<item Key="NodeD%d S%d ,Min data zooming (%d) > Max data zooming(%d)" ENG="NodeD%d S%d ,Min data zooming (%d) > Max data zooming(%d)" CHN_S="节点D%d S%d 放缩后的最小值(%d)大于放缩后的最大值(%d)"> </item>
+	<item Key="The direction of adjacent" ENG="The direction of adjacent" CHN_S="相邻偏差计算方向"> </item>
+	<item Key="Top" ENG="Top" CHN_S="上"> </item>
+	<item Key="Bottom" ENG="Bottom" CHN_S="下"> </item>
+	<item Key="Left" ENG="Left" CHN_S="左"> </item>
+	<item Key="Right" ENG="Right" CHN_S="右"> </item>
+	<item Key="Minimum added value of adjacent deviation" ENG="Minimum added value of adjacent deviation" CHN_S="相邻偏差最小增加值"> </item>
+	<item Key="Minimum added value of adjacent deviation %.2f" ENG="Minimum added value of adjacent deviation %.2f" CHN_S="相邻偏差最小增加值 %.2f"> </item>
+	<item Key="Only input numbers" ENG="Only input numbers" CHN_S="只能输入数字"> </item>
+	<item Key="Max Rawdata:" ENG="Max Rawdata:" CHN_S="节点最大值:"> </item>
+	<item Key="Min Rawdata:" ENG="Min Rawdata:" CHN_S="节点最小值:"> </item>
+	<item Key="Max Adjacent deviation:" ENG="Max Adjacent deviation:" CHN_S="相邻最大偏差:"> </item>
+	<item Key="Drawing Line Max Adjacent deviation" ENG="Drawing Line Max Adjacent deviation:" CHN_S="画线相邻最大偏差:"> </item>
+	<item Key="the accord direction of nodes is not same, the default value will be show" ENG="the accord direction of nodes is not same, the default value will be show" CHN_S="当前框选的节点的相邻偏差方向不一致，将会显示默认的方向"> </item>
+	<item Key="Import files" ENG="ImportFiles" CHN_S="导入文件"></item>
+	<item Key="Data analyse" ENG="DataAnalyse" CHN_S="数据分析"></item>
+	<item Key="Data chat" ENG="DataChat" CHN_S="数据图表"></item>
+	<item Key="Pre frame" ENG="PreFrame" CHN_S="上一帧"></item>
+	<item Key="Next frame" ENG="NextFrame" CHN_S="下一帧"></item>
+	<item Key="Play" ENG="Play" CHN_S="播放当前"></item>
+	<item Key="Pre TP" ENG="PreTP" CHN_S="上一TP"></item>
+	<item Key="Next TP" ENG="NextTP" CHN_S="下一TP"></item>
+	<item Key="Sample" ENG="Sample" CHN_S="采样"></item>
+	<item Key="Stop Sampling" ENG="StopSampling" CHN_S="停止采样"></item>
+	<item Key="All OK" ENG="AllOK" CHN_S="全部完成"></item>
+	<item Key="Delete Cur" ENG="DeleteCur" CHN_S="删除当前"></item>
+	<item Key="The %d TP %d frame,file name: %s" ENG="The %d TP %d frame,file name: %s" CHN_S="第%d块TP第%d帧，文件名：%s"></item>
+	<item Key="Confirm the Red data is normal or not" ENG="Confirm the Red data is normal or not" CHN_S="确认方框内数据是否正常(通过画线、查看差值等方式确定是否符合要求)"> </item>
+	<item Key="Test data get" ENG="Test data get" CHN_S="测试数据采集" > </item>
+	<item Key="Success data,Please put next TP and Sample data" ENG="Success data,Please put next TP and Sample data" CHN_S="成功获取数据,请接入下一TP进行数据采集" > </item>
+	<item Key="TP connected,can sample data" ENG="TP connected,can sample data" CHN_S="TP成功接入，可进行数据收集" > </item>
+	<item Key="Please connect the new TP" ENG="Please connect the new TP" CHN_S="请接入新的TP" > </item>
+	<item Key="Do you want to save the data?" ENG="Do you want to save the data?" CHN_S="是否保存数据"></item>
+	<item Key="Save data" ENG="Save data" CHN_S="保存数据"></item>
+	<item Key="StopSaving" ENG="StopSaving" CHN_S="停止保存"></item>
+	<item Key="Area accord:" ENG="Area accord:" CHN_S="区域偏差:"></item>
+	<item Key="No data" ENG="No data" CHN_S="没有数据"></item>
+	<item Key="Max channel: %d" ENG="Max channel: %d" CHN_S="最大通道数:%d"></item>
+	<item Key="select folder" ENG="select folder" CHN_S="选择保存路径"></item>
+	<item Key="Inconsistent data file types" ENG="Inconsistent data file types" CHN_S="文件类型不支持"></item>
+	<item Key="Achieve data storage limit, you can not continue to save the data" ENG="Achieve data storage limit, you can not continue to save the data" CHN_S="超过最大导入文件数，不能再导入"></item>
+	<item Key="Data import is successful,total:%d" ENG="Data import is successful,total:%d" CHN_S="数据导入成功，共计:%d"></item>
+	<item Key="Rawdata magnification" ENG="Rawdata magnification" CHN_S="原始值放大倍数"></item>
+	<item Key="Rawdata minification" ENG="Rawdata minification" CHN_S="原始值缩小倍数"></item>
+	<item Key="Set Rawdata magnification" ENG="Set Rawdata magnification" CHN_S="设置原始值放大倍数"></item>
+	<item Key="Set Rawdata minification" ENG="Set Rawdata minification" CHN_S="设置原始值缩小倍数"></item>
+	<item Key="The magnification should be not less than 1" ENG="The magnification should not less than 1" CHN_S="放大倍数必须大于等于1"></item>
+	<item Key="The minification should be great than 0 and less than 1" ENG="The minification should be great than 0 and less than 1" CHN_S="缩小倍数必须大于0小于1"></item>
+	<item Key="The accord magnification should be great than 1" ENG="The accord magnification should be great than 1" CHN_S="相邻偏差放大倍数必须大于1"></item>
+	<item Key="The Area Rawdata Maximal / Minimal should be great than 1(1.3-1.4)" ENG="The Area Rawdata Maximal / Minimal should be great than 1(1.3-1.4)" CHN_S="区域内原始值最大值/最小值需大于1,建议1.3-1.4"></item>
+	<item Key="The Accord MIN should be great than %6.2f" ENG="The Accord MIN should be great than %6.2f" CHN_S="相邻偏差最小值需大于%6.2f"></item>
+	<item Key="The Accord Min add step value %.2f" ENG="The Accord Min add step value %.2f" CHN_S="相邻偏差最小增加值为%.2f"></item>
+	<item Key="Suggest the Accord value should be less than 10" ENG="Suggest the Accord value should be less than 10" CHN_S="相邻偏差建议小于10"></item>
+	<item Key="Zoom in rawdata" ENG="Zoom in rawdata" CHN_S="放大后通道值"></item>
+	<item Key="Zoom out rawdata" ENG="Zoom out rawdata" CHN_S="缩小后通道值"></item>
+	<item Key="Area Rawdata Max/Min,Use this value to divide area,Set on special node if not at the centre of gravity in area" ENG="Area Rawdata Max/Min,Use this value to divide area,Set on special node if not at the centre of gravity in area" CHN_S="区域内原始值最大值/最小值比例，根据该值进行区域划分，不在重心点所在的区域，都设置为特殊节点"></item>
+	<item Key="Rawdata" ENG="Rawdata" CHN_S="原始值"></item>
+	<item Key="Accord magnification" ENG="Accord magnification" CHN_S="相邻偏差放大倍数"></item>
+	<item Key="Accord Zoom in" ENG="Accord Zoom in" CHN_S="相邻偏差放大后值"></item>
+	<item Key="Min accord value" ENG="Min accord value" CHN_S="相邻偏差最小值"></item>
+	<item Key="The min add step of accord" ENG="The min add step of accord" CHN_S="相邻偏差最小增加值"></item>
+	<item Key="Area Rawdata Maximal / Minimal" ENG="Area Rawdata Maximal / Minimal" CHN_S="区域内原始值最大值/最小值"> </item>
+	<item Key="All Node set on special node" ENG="All Node set on special node" CHN_S="全部设置为特殊节点"> </item>
+	<item Key="Average value as the zoom base value" ENG="Average value as the zoom base value" CHN_S="平均值作为放缩基准"> </item>
+	<item Key="Chanel node zoom set" ENG="Chanel node zoom set" CHN_S="通道放大缩小倍数设置"></item>
+	<item Key="Set zoom value of each node,or not" ENG="Set zoom value of each node,or not" CHN_S="是否对每个节点单独设置放缩倍数"></item>
+	<item Key="Zoom mode set" ENG="Zoom mode set" CHN_S="放缩模式设置"></item>
+	<item Key="ShowType:" ENG="ShowType:" CHN_S="显示类型:"> </item>
+	<item Key="is normal node value" ENG="is normal node value." CHN_S="正常节点数值."> </item>
+	<item Key="Red value" ENG="Red value:" CHN_S="红色数值:"> </item>
+	<item Key="is abnormal node value" ENG="is abnormal node value." CHN_S="不正常节点数值."> </item>
+	<item Key="import license successfully, need re-open tool" ENG="import license successfully, need re-open tool" CHN_S="成功导入License，需要重启工具"> </item>
+	<item Key="import license fail" ENG="import license fail" CHN_S="导入License失败"> </item>
+	<item Key="export license apply file successfully" ENG="export license apply file successfully" CHN_S="成功导出License申请文件"> </item>
+	<item Key="export license apply file fail" ENG="export license apply file fail" CHN_S="导出License申请文件失败"> </item>
+	<item Key="generate license successfully" ENG="generate license successfully" CHN_S="License制作成功"> </item>
+	<item Key="generate license fail" ENG="generate license fail" CHN_S="License制作失败"> </item>
+	<item Key="Import Order File" ENG="ImportOrder" CHN_S="导入工单"> </item>
+	<item Key="Export Order File" ENG="ExportOrder" CHN_S="导出工单"> </item>
+	<item Key="Import Config File" ENG="ImportConfig" CHN_S="导入配置"> </item>
+	<item Key="Export Config File" ENG="ExportConfig" CHN_S="导出配置"> </item>
+	<item Key="Open different cfg len cmp option" ENG="By principle,cfg in order and fw need be exactly the same,if choose yes,will ignore the cfg different length of both in order and in ic,have risk,OK to continue or Cancel" CHN_S="原则上,测试固件和配置要完全匹配,选择是将忽略order配置和IC配置长度不一致的部分,存在风险,OK继续,Cancel取消."> </item>
+	<item Key="Information" ENG="Information:" CHN_S="信息:"/>
+	<item Key="refer" ENG="refer:" CHN_S="基准:"/>
+	<item Key="zoom out ratio" ENG="zoom out ratio:" CHN_S="缩小比率:"/>
+	<item Key="zoom in ratio" ENG="zoom in ratio:" CHN_S="放大比率:"/>
+	<item Key="real time ratio" ENG="real time ratio:" CHN_S="实时比率:"/>
+	<item Key="max setting" ENG="max setting:" CHN_S="最大值设置:"/>
+	<item Key="min setting" ENG="min setting:" CHN_S="最小值设置:"/>
+	<item Key="FormatError PleaseInputHexString" ENG="Format error!Please input comma separated HEX number" CHN_S="格式错误，请输入逗号分隔的十六进制数字"/>
+	<item Key="key diff data" ENG="key diff data" CHN_S="按键差值"/>
+	<item Key="UPDATE DEFAULT TEST PARAM" ENG="update hard VDDIO test option，short test param and so on" CHN_S="更新硬件测试的VDDIO勾选项，短路测试参数"/>
+	<item Key="SwitchLanguageSuccessed" ENG="Operate successfully, please restart the software!" CHN_S="设置成功，请重启工具！"> </item>
+	<item Key="SwitchLanguageFailed" ENG="Operate failed!" CHN_S="设置失败！"> </item>
+	<item Key="SwitchOK" ENG="Switch successful!" CHN_S="切换成功"> </item>
+	<item Key="SwitchFail" ENG="Switch fail!" CHN_S="切换失败"> </item>
+	<item Key="Switching" ENG="Switching, unable to switch multiple times at the same time, abnormally exit!" CHN_S="正在切换,不能同时多次切换,异常退出"> </item>
+	<item Key="Undectected board" ENG="Undetected test board, abnormal exit!" CHN_S="未检测到测试板,异常退出"> </item>
+	<item Key="Initialization failure" ENG="Initialization failure, exception exit" CHN_S="初始化失败,异常退出"> </item>
+	<item Key="Switch thread startup failed" ENG="Switch thread startup failed, exception exit" CHN_S="初始化失败,异常退出"> </item>
+	<item Key="The switch process has started" ENG="The switch process has started, please wait patiently..." CHN_S="切换过程已经开始,请耐心等待..."> </item>
+	<item Key="WaitSwitching" ENG="Switching..." CHN_S="正在切换..."> </item>
+	<item Key="Switch" ENG="Switch" CHN_S="切换"> </item>
+	<item Key="IsRunning_PleaseCloseIt" ENG="is Running, please close it and retry." CHN_S="正在运行，请关闭并重试"> </item>
+	<item Key="Export param" ENG="Export param" CHN_S="导出参数"> </item>
+	<item Key="Import param" ENG="Import param" CHN_S="导入参数"> </item>
+	<item Key="%s not support" ENG="%s not support" CHN_S="%s不支持"/>
+	<item Key="back custominfo must use isp,can't cancel" ENG="back custominfo must use isp,can't cancel" CHN_S="客户信息备份必须要使用ISP不能取消"/>
+	<item Key="Order fw(%s) not match" ENG="Order fw(%s) not match" CHN_S="工单固件(%s)不匹配"/>
+	<item Key="IC fw(%s)" ENG="IC fw(%s)" CHN_S="IC固件(%s)"/>
+	<item Key="Input" ENG="Input" CHN_S="输入"/>
+	<item Key="Would you wanna close GTM software tool?" ENG="Would you wanna close GTM software tool?" CHN_S="关闭工具确认?"/>
+	<item Key="Testing,please wait test finish!!" ENG="Testing,please wait test finish!!" CHN_S="正在测试,请等待测试结束!!!"/>
+	<item Key="TestResult directory does not exist!" ENG="TestResult directory does not exist!" CHN_S="TestResult文件夹不存在!"/>
+	<item Key="Order fw(%s) not match" ENG="Order fw(%s) not match" CHN_S="工单固件(%s)不匹配"/>
+	<item Key="IC fw(%s)" ENG="IC fw(%s)" CHN_S="IC固件(%s)"/>
+	<item Key="Input" ENG="Input" CHN_S="输入"/>
+	<item Key="Please Input Password:" ENG="Please Input Password:" CHN_S="请输入密码:"/>
+	<item Key="Password error,Please Re-Input:" ENG="Password error,Please Re-Input:" CHN_S="密码错误,请重新输入:"/>
+	<item Key="Board Connect Abormal" ENG="Board Connect Abormal,Abort the following tests" CHN_S="测试板通信异常，终止后续测试项"/>
+	<item Key="Test Result Data Abnormal" ENG="Test Result Data Abnormal$   IC wrong $or IC is bad chip $or Module not tested $or Module last tested NG$..." CHN_S="测试结果数据异常$    IC不匹配 $或者IC是不良品$或者模组未经过测试$或者模组最近一次测试为NG$..."/>
+	<item Key="Rawdata and diffdata test check box are empty!" ENG="Rawdata and diffdata test check box are empty!" CHN_S="原始数据和差异数据测试勾选框为空！"/>
+	<item Key="Param type is Freq but Freq Value is 0!" ENG="Param type is Freq but Freq Value is 0!" CHN_S="参数类型为 Freq 但 Freq Value 为 0！"/>
+	<item Key="Param type is Config but Config File is empty!" ENG="Param type is Config but Config File is empty!" CHN_S="参数类型是配置但配置文件是空的！"/>
+	<item Key="QRCode Delay Test Time can't be less than 10!" ENG="QRCode Delay Test Time can't be less than 10!" CHN_S="二维码延迟启动时间不能小于10！"/>
+</LanguageLibrary>

@@ -1,0 +1,2 @@
+motor position,0.0,0.0
+motor actual coordinates,-10352,-694
