@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/CalibrationImages">
+    <file>resource/icon.jpg</file>
+    <file>resource/photo1.jpg</file>
+    <file>resource/photo2.jpg</file>
+  </qresource>
+</RCC>
