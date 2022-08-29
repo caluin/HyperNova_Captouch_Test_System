@@ -4,10 +4,16 @@ import PostProcessing
 import datetime
 import os
 import subprocess
+import threading
 import traceback
 import numpy
 import time
+from threading import Timer
+import os
+import queue
+from command_runner import command_runner_threaded
 import select
+
 
 
 class TestCases():
@@ -18,14 +24,33 @@ class TestCases():
         self.test_fixture_shared_memory_handler = test_fixture_shared_memory_handler
         self.project_path = os.path.dirname(os.path.abspath(__file__))
         self.p = self.initialize_glass()
+        self.output_queue = queue.Queue()
 
     def initialize_glass(self):
-        p = subprocess.Popen(self.project_path + '\\2DTouchGesture\\TouchCoordinatesGesture.exe',
-                             stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        #p = subprocess.Popen(self.project_path + '\\2DTouchGesture\\TouchCoordinatesGesture.exe',
+        #                     stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        thread_result = command_runner_threaded(self.project_path + '\\2DTouchGesture\\TouchCoordinatesGesture.exe', shell=True, method='poller', stdout=output_queue)
         time.sleep(5)
         while True:
-            # line = run_with_timeout
-            line = p.stdout.readline()
+            stream_output = ""
+            read_queue = True
+            while read_queue:
+                try:
+                    line = self.output_queue.get(timeout=1)
+                except queue.Empty:
+                    #Actions on empty queue
+                    pass
+                else:
+                    #quit the read
+                    if line is None:
+                        read_queue = False
+                    else:
+                        stream_output += line
+                        print(line)
+            # Now we may get exit_code and output since result has become available at this point
+
+            if line is None:
+                break
             if "Finish test" in line.decode('utf-8'):
                 print("TestCases: Glass initialization success!")
                 return p
@@ -84,8 +109,7 @@ class TestCases():
         p.terminate()
 
     def async_dump_logcat_press_and_hold(self):
-        p = subprocess.Popen(self.project_path + '\\2DTouchGesture\\TouchCoordinatesGesture.exe',
-                             stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
         num_entries = 0
         while True:
             line = p.stdout.readline()
