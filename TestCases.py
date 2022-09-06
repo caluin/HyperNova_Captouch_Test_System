@@ -23,41 +23,32 @@ class TestCases():
         self.motor_off()
         self.test_fixture_shared_memory_handler = test_fixture_shared_memory_handler
         self.project_path = os.path.dirname(os.path.abspath(__file__))
-        self.p = self.initialize_glass()
         self.output_queue = queue.Queue()
+        self.p = self.initialize_glass()
+
 
     def initialize_glass(self):
         #p = subprocess.Popen(self.project_path + '\\2DTouchGesture\\TouchCoordinatesGesture.exe',
         #                     stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        thread_result = command_runner_threaded(self.project_path + '\\2DTouchGesture\\TouchCoordinatesGesture.exe', shell=True, method='poller', stdout=output_queue)
+        thread_result = command_runner_threaded(self.project_path + '\\2DTouchGesture\\TouchCoordinatesGesture.exe h', shell=True, method='poller', stdout=self.output_queue)
         time.sleep(5)
-        while True:
-            stream_output = ""
-            read_queue = True
-            while read_queue:
-                try:
-                    line = self.output_queue.get(timeout=1)
-                except queue.Empty:
-                    #Actions on empty queue
-                    pass
+        read_queue = True
+        while read_queue:
+            try:
+                line = self.output_queue.get(timeout=5)
+            except queue.Empty:
+                #Actions on empty queue
+                print("Error on reading: timeout, check device connections and re-run the app")
+                pass
+            else:
+                #quit the read
+                if line is None:
+                    read_queue = False
                 else:
-                    #quit the read
-                    if line is None:
-                        read_queue = False
-                    else:
-                        stream_output += line
-                        print(line)
-            # Now we may get exit_code and output since result has become available at this point
-
-            if line is None:
-                break
-            if "Finish test" in line.decode('utf-8'):
-                print("TestCases: Glass initialization success!")
-                return p
-            if line.decode('utf-8') == '':
-                print("TestCases: Glass initialization failed!")
-                p.stdout.flush()
-                return 0
+                    print(line)
+                    if "Success: Starting to report coordinates and gestures" in line:
+                        break;
+        # Now we may get exit_code and output since result has become available at this point
 
     def get_motor_driver_handler(self):
         return self.motor
@@ -90,42 +81,67 @@ class TestCases():
         self.file = open('data/' + self.output_filename + '_raw.txt', 'a')
 
     def async_dump_logcat(self):
-        os.system('adb logcat -c')
-        p = subprocess.Popen("adb logcat -s mcuservice", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        num_entries = 0
-        while True:
-            line = p.stdout.readline()
+        read_queue = True
+        while read_queue:
             try:
-                if "[trace  ] {CAPT}: module_captouch.c" in line.decode('utf-8'):
-                    if num_entries == Constants.NUM_OF_SAMPLES_PER_MEASUREMENT_NOISE_FULL_SCAN * 2:
-                        break
+                line = self.output_queue.get(timeout=5)
+            except queue.Empty:
+                # Actions on empty queue
+                print("error")
+                break;
+                pass
+            else:
+                # quit the read
+                if line is None:
+                    read_queue = False
+                else:
                     print(line.decode('utf-8'))
                     self.file.write(line.decode('utf-8'))
                     self.file.flush()
-                    num_entries = num_entries + 1
-            except:
-                print("TestCases: Unrecognizable character, skip to next line...")
-        p.stdout.close()
-        p.terminate()
+
+    def flush_read_queue(self):
+        read_queue = True
+        while read_queue:
+            try:
+                line = self.output_queue.get(timeout=1)
+            except queue.Empty:
+                # Actions on empty queue
+                print("TestCases: Output queue emptied")
+                break;
+                pass
+            else:
+                # quit the read
+                if line is None:
+                    read_queue = False
+                else:
+                    print(line)
 
     def async_dump_logcat_press_and_hold(self):
-
         num_entries = 0
-        while True:
-            line = p.stdout.readline()
+        read_queue = True
+        while read_queue:
             try:
-                if "[ID,X,Y,SIZE]" in line.decode('utf-8'):
-                    # read out value
-                    if num_entries == Constants.NUM_OF_SAMPLES_PER_MEASUREMENT_JITTER_LINEARITY:
-                        break
-                    print(line.decode('utf-8'))
-                    self.file.write(line.decode('utf-8'))
-                    self.file.flush()
-                    num_entries = num_entries + 1
-            except:
-                print("TestCases: Unrecognizable character, skip to next line...")
-        p.stdout.close()
-        p.terminate()
+                line = self.output_queue.get(timeout=5)
+            except queue.Empty:
+                # Actions on empty queue
+                print("TestCases: Error! Not enough data")
+                break;
+                pass
+            else:
+                # quit the read
+                if line is None:
+                    read_queue = False
+                else:
+                    if "[ID,X,Y,SIZE]" in line:
+                        # read out value
+                        if num_entries == Constants.NUM_OF_SAMPLES_PER_MEASUREMENT_JITTER_LINEARITY:
+                            break
+                        print(line)
+                        self.file.write(line)
+                        self.file.flush()
+                        num_entries = num_entries + 1
+                    else:
+                        print("TestCases: Unrecognizable character, skip to next line...")
 
     # function open subprocess when it is called with argument, a process handler will be returned. Data capture will happen in the background.
     # function reads the stdout of the process, saves the read to a file and closes the process when it is called with the process handler the second time
@@ -141,13 +157,13 @@ class TestCases():
             while True:
                 line = p.stdout.readline()
                 try:
-                    if "[ID,X,Y,SIZE]" in line.decode('utf-8'):
+                    if "[ID,X,Y,SIZE]" in line:
                         # read out value per NUM_OF_SAMPLES_PER_MEASUREMENT_GESTURE
                         if (num_entries == Constants.NUM_OF_SAMPLES_PER_MEASUREMENT_GESTURE):
                             num_entries = 0
                             break
-                        print(line.decode('utf-8'))
-                        self.file.write(line.decode('utf-8'))
+                        print(line)
+                        self.file.write(line)
                         self.file.flush()
                         num_entries = num_entries + 1
                 except:
@@ -346,6 +362,7 @@ class TestCases():
                         (y - y_reference) * 25.4 / 5097) + '\n')
                     self.file.write("motor actual coordinates," + str(x) + ',' + str(y) + '\n')
                     self.file.flush()
+                    self.flush_read_queue()
                     # motor moves to the target location
                     self.motor.go_location_nonstop(x, y - Constants.MOTOR_Y_AXIS_ENGAGEMENT_DISTANCE_IN_MOTOR_UNIT)
                     # motor press
@@ -354,7 +371,7 @@ class TestCases():
                     self.async_dump_logcat_press_and_hold()
                     time.sleep(0.2)
                     # release motor
-                    self.motor.go_location_nonstop(x, y + Constants.MOTOR_Y_AXIS_ENGAGEMENT_DISTANCE_IN_MOTOR_UNIT)
+                    self.motor.go_location_nonstop(x, y + 4*Constants.MOTOR_Y_AXIS_ENGAGEMENT_DISTANCE_IN_MOTOR_UNIT)
                     print('TestCases: Linearity Jitter Measurement paused...')
                 else:
                     # test is interrupted
@@ -363,7 +380,7 @@ class TestCases():
             print('TestCases: Linearity Jitter Measurement completed.')
             self.file.close()
             print('TestCases: Processing data...')
-            PostProcessing.post_process_linearity_jitter('data/' + self.output_filename + '_raw.txt')
+            #PostProcessing.post_process_linearity_jitter('data/' + self.output_filename + '_raw.txt')
             print('TestCases: Data processing completed.')
             self.motor_off()
             self.test_fixture_shared_memory_handler['test_cases:interrupt'] = False

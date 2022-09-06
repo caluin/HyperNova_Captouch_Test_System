@@ -1,5 +1,0 @@
-2022-08-19 11:34:01.000 [14824] [SPECIAL] -----------------  log4z thread started!   ----------------------------
-2022-08-19 11:34:01.001 [14824] [SPECIAL] logger id=0 key=Main name=Main path=C:\Users\wenhaochen\Desktop\Release\Log\2022-08-19\ level=1 display=true
-2022-08-19 11:34:01.060 [18012] [SPECIAL] [CommDaemon.cpp][531] 5555 window[0] OpenDevice[0]("\\.\COM5")
-2022-08-19 11:34:01.061 [18012] [SPECIAL] [Stm32FxBoard.cpp][3496] ExePullInCallback \\.\COM5
-2022-08-19 11:34:12.591 [22312] [SPECIAL] [ProtoManager.cpp][138] CProtoManager::RcvProtoProcFunc Thread End
